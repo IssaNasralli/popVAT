@@ -13,7 +13,8 @@ The overall workflow and the location of the study area (**Tunisia**) are illust
 # 2. Dataset
 
 This section explains the **data assembly, preprocessing and transformation workflow** used in the study.  
-The full workflow is illustrated in **Figure 1 of popVAT**.
+The full workflow is illustrated in **Figure 1 of popVAT**:
+![ ](flochart.png)
 
 The dataset consists of **population data** and several **ancillary datasets**.
 
