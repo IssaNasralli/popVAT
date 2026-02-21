@@ -31,10 +31,10 @@ Four population datasets were used:
 
 Original sources:
 
-- WorldPop: https://www.worldpop.org/  
-- GPWv4: https://sedac.ciesin.columbia.edu/data/collection/gpw-v4  
-- LandScan: https://landscan.ornl.gov/  
-- INS: http://www.ins.tn/
+- WorldPop: https://hub.worldpop.org/doi/10.5258/soton/wp00536
+- GPWv4: https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-gpwv4-popdens-r11-4.11
+- LandScan: https://landscan.ornl.gov/ 
+- INS: https://www.ins.tn/statistiques/111
 
 Because some of these datasets require downloading **global rasters and extracting Tunisia**, we provide ready-to-use files.
 
