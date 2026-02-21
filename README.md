@@ -5,9 +5,8 @@
 This repository provides the implementation of **popVAT**, an extension of the **popVAE** framework for high-resolution population mapping.  
 popVAT uses the **same datasets as popVAE**, while the **deep learning model is modified** to improve performance.
 
-The overall workflow and the location of the study area (**Tunisia**) are illustrated in **Figure 1-a of popVAE**.  
-The figure is included in this repository.
-
+The overall workflow and the location of the study area (**Tunisia**) are illustrated in **Figure 1-a of popVAE**:
+!area.png
 ---
 
 # 2. Dataset
