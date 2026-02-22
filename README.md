@@ -197,20 +197,80 @@ Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Downl
 
 ---
 
-# 2.3 Final Dataset
+## 2.4 Visualizing and Inspecting the Dataset in ArcGIS Pro
 
-After downloading and preprocessing all datasets, users can reproduce the dataset used in this study.
+The final dataset (`tunisia10.tif`) is a multi-band raster that can be easily explored using ArcGIS Pro.
 
-For convenience, the final dataset is also provided (tunisia10.tif):  👉 [Download](https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing)
+### Step 1 — Download the dataset
+Download the file from the link below and extract it if necessary.
 
+Dataset:
+https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing
 
+### Step 2 — Open ArcGIS Pro
+Launch ArcGIS Pro and create a new project (Map project is sufficient).
 
+### Step 3 — Add the raster dataset
+1. In the **Catalog Pane**, click **Folders → Add Folder Connection**.
+2. Navigate to the folder containing `tunisia10.tif`.
+3. Drag and drop the raster into the map.
 
-Characteristics:
+Alternatively:
+Map → Add Data → Browse to `tunisia10.tif`.
 
-- Original 12 bands
-- Educational POIs merged later into one layer: Final dataset contains **10 bands**
+### Step 4 — Inspect the bands
+1. Right-click the raster layer.
+2. Select **Properties**.
+3. Go to the **Source** tab to view:
+   - Number of bands
+   - Pixel type
+   - Spatial resolution
+   - Coordinate system.
 
+The dataset contains **10 bands** derived from the original 12 layers.
+
+### Step 5 — Display individual bands
+To visualize a specific band:
+
+1. Right-click the layer → **Symbology**.
+2. Choose **Singleband Gray** to inspect one band.
+3. Select the band index (Band 1–10).
+
+### Step 6 — Create RGB composites
+To visualize multiple layers together:
+
+1. Open **Symbology**.
+2. Choose **RGB Composite**.
+3. Assign bands to Red, Green, and Blue channels.
+
+Example:
+- R = Band 4  
+- G = Band 3  
+- B = Band 2  
+
+This helps visually analyze spatial patterns.
+
+### Step 7 — Extract band values
+To inspect pixel values:
+
+1. Go to **Explore Tool**.
+2. Click anywhere on the raster.
+3. Pixel values for all bands will appear.
+
+### Step 8 — Export or process the raster (optional)
+Users can run additional geospatial analysis:
+
+Toolbox → Spatial Analyst → Raster Processing tools such as:
+- Clip
+- Reproject Raster
+- Raster Calculator
+- Zonal Statistics
+
+### Notes
+- Recommended coordinate system: **WGS84 / UTM Zone 32N (EPSG:32632)**.
+- Make sure the raster is fully loaded before running analysis.
+
+- 
 ---
 
 # 3. popVAT Architecture
