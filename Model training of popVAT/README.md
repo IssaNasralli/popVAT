@@ -84,4 +84,4 @@ Random Seeds: Seeds are set for reproducibility (tf, numpy, random).
 
 Data Reduction Heuristic: Only a subset of the raster pixels is used to match the number of trainable parameters, ensuring stable learning and spatial generalization.
 
-Logging: Training progress results are printed in the console and saved in checkpoint files.
+Logging: Training progress results are printed in the console.
