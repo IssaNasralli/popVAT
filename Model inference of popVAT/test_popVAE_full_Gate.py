@@ -33,7 +33,8 @@ def set_files(choice, country, model_option, batch_size, latent_dim, patch_size_
 
 
 def set_param(parser):
-
+    
+    nb_masks=24
     parser.add_argument("--model_option", type=str, required=True, help="Model option for ablation study") # G (VAE + Gate_Z), GA (VAE + Gate_Z + Atrous) and GAG (VAE + Gate_Z + Atrous + Gate_A)
     parser.add_argument("--batch_size", type=int, required=True, help="Batch size for training/evaluation")
     parser.add_argument("--latent_dim", type=int, required=True, help="Latent dimension size")
@@ -41,7 +42,7 @@ def set_param(parser):
     parser.add_argument("--training", type=int, choices=[0, 1], required=True, help="Training mode: 1 for training, 0 for inference")
     parser.add_argument("--choice", type=str, required=True, help="Input raster base name (e.g., tunisia10)")
     parser.add_argument("--country", type=str, required=True, help="Country name for district mask loading")
-    parser.add_argument("--nb_masks", type=int, required=True, help="Number of district masks to load")
+    parser.add_argument("--nb_masks", type=int, required=False, help="Number of district masks to load")
     parser.add_argument("--weights", type=str, required=False, default=None, help="File Weights for transfer learning (optional)")
 
     args = parser.parse_args()
@@ -89,14 +90,6 @@ def main():
 
     input_data, profile = data.preprocess_raster_compososite(input_raster, output_raster,weight_b6,weight_b7,weight_b8, bands+2)
 
-
-    district_masks = data.load_district_masks(country, nb_masks)
-
-    for i, mask in enumerate(district_masks):
-        height, width = mask.shape
-        print(f"Width: {width}, Height: {height}")
-        break
-    
     # Create the model
     if(model_option=="G"):
         model = popVAE.create_vae_G(patch_size, latent_dim, bands, bands_context)
