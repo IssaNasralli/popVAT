@@ -90,14 +90,10 @@ Rasterization of non-residential areas instructions are provided in the same fol
 
 # 2.2.4 Building Footprint
 
-Original dataset:
-
-WSF2019  
+Original dataset: WSF2019  
 https://download.geoservice.dlr.de/WSF2019/
 
-Since the dataset is distributed as tiles, we provide the assembled Tunisia file:
-
-WSF2019.tif
+Since the dataset is distributed as tiles, we provide the assembled Tunisia file: WSF2019.tif  👉 [Download](https://drive.google.com/file/d/1J0v0zZ0NSz3B5LQY5kWo04d__JzPMrGY/view?usp=sharing)
 
 ### Processing
 
@@ -109,19 +105,11 @@ Number of floors = pixel height / 3 meters
 
 4. Floors were multiplied with the checked WSF2019 dataset.
 
-Detailed steps are provided in:
-
-Building Foot print/
-
-Intermediate and final files:
-
-non_residential_buildings0or1.tif  
-Tunisia_floor_WSF2019_WGS_84_32N_0to1.tif  
-Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif  
+Detailed steps are provided in the folder "Building Foot print"
 
 Final dataset used in the study:
 
-Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif
+Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
 
 ---
 
