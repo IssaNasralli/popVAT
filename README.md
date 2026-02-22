@@ -66,9 +66,8 @@ Educational POIs include:
 The original tabular dataset download link is provided in the folder "Educational POI".
 
 Because the source platform continuously updates the dataset (overwriting old versions),  
-the exact version used in this study is also provided:
+the exact version used in this study is also provided in the folder "Educational POI":POI.xls
 
-POI.xls
 Detailed workflow is provided in the foler "Educational POI"
 
 Final dataset in the folder Educational POI: POI.tif
