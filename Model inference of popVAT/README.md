@@ -61,6 +61,7 @@ In this mode, the model is not trained.
 A trained weights file must already exist.
 An Ancillary data  file must already exist  (`tunisia10.tif`) .
 Download the ready file (`tunisia10.tif`) from this link.  👉 [Download](https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing)
+
 If the --weights parameter is not explicitly provided, the script automatically constructs the expected file name using the provided parameters:
 
 ```
