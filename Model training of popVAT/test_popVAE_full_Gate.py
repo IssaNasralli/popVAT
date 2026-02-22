@@ -10,7 +10,6 @@ from sklearn.model_selection import train_test_split
 import popVAE_full_Gate_Atrous_Gate as popVAE
 
 import data_atrous as data
-import evaluate as ev
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from tensorflow.keras import backend as K
 import rasterio
