@@ -443,7 +443,7 @@ Training scripts and configuration files are provided in the folder "Model train
 
 ---
 
-## 5. Raster Population Prediction Map at the Pixel Level
+# 5. Raster Population Prediction Map at the Pixel Level
 
 After training the model, the next step consists of generating a full **population prediction raster**.
 
