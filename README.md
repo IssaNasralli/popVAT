@@ -509,6 +509,3 @@ If you use this repository, please cite the corresponding publications of **popV
 
 ---
 
-# License
-
-Specify the license used for this repository.
