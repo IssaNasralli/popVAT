@@ -43,17 +43,13 @@ A checkpoint file is automatically created during inference so that processing c
 
 Population map generation can be launched with the following command:
 
+
 ```bash
-python3 test_popVAE_full_Gate.py \
---model_option GAG \
---batch_size 1025 \
---latent_dim 20 \
---patch_size_global 21 \
---training 0 \
---choice tunisia10 \
---country Tunisia \
---nb_masks 24 \
---weights
+python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 0 --choice tunisia10 --country Tunisia --weights best_weights_popVAE_full_Tunisia_GAG_1025_20_21.h5
+```
+or
+```bash
+python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 0 --choice tunisia10 --country Tunisia
 ```
 
 ### Important:
