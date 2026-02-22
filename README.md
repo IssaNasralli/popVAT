@@ -197,7 +197,7 @@ Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Downl
 
 ---
 
-## 2.3 Creating the Final Multi-Band Dataset in ArcGIS Pro
+# 2.3 Creating the Final Multi-Band Dataset in ArcGIS Pro
 
 The final dataset (`tunisia10.tif`) is produced by stacking all prepared raster layers into a single multi-band raster using ArcGIS Pro.
 
@@ -273,7 +273,7 @@ Total = **12 bands**.
 This file corresponds to the dataset used for training and evaluation in the study.
 
 
-# 2.3 Visualizing and Inspecting the Dataset in ArcGIS Pro
+# 2.4 Visualizing and Inspecting the Dataset in ArcGIS Pro
 
 The final dataset (`tunisia10.tif`) is a multi-band raster that can be easily explored using ArcGIS Pro.
 
