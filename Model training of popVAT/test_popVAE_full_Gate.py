@@ -41,7 +41,6 @@ def set_param(parser):
     parser.add_argument("--training", type=int, choices=[0, 1], required=True, help="Training mode: 1 for training, 0 for inference")
     parser.add_argument("--choice", type=str, required=True, help="Input raster base name (e.g., tunisia10)")
     parser.add_argument("--country", type=str, required=True, help="Country name for district mask loading")
-    parser.add_argument("--nb_masks", type=int, required=True, help="Number of district masks to load")
     parser.add_argument("--weights", type=str, required=False, default=None, help="File Weights for transfer learning (optional)")
 
     args = parser.parse_args()
@@ -52,7 +51,7 @@ def set_param(parser):
     training = args.training
     choice = args.choice
     country = args.country
-    nb_masks = args.nb_masks
+    nb_masks = 24
     weights = args.weights
 
     print("model_option =", model_option)
@@ -187,3 +186,4 @@ if __name__ == "__main__":
 
 	
 	#python3 test_popVAE_full_Gate.py --model_option 2 --batch_size 64 --latent_dim 900 --patch_size_global 35 --training 1 --choice tunisia10 --country Tunisia --nb_masks 24 --weights weights.h5
+
