@@ -83,8 +83,8 @@ Download via HOT Export Tool:
 
 https://export.hotosm.org/
 
-LU data used in the study (polygons shapefile) are provided in the folder 
-**`LU/`**
+LU data used in the study (polygons shapefile) are provided in the folder : 👉 [**`LU/`**](https://github.com/IssaNasralli/popVAT/tree/main/LU)
+
 
 Rasterization of non-residential areas instructions are provided in the same folder.
 
@@ -107,8 +107,7 @@ Number of floors = pixel height / 3 meters
 
 4. Floors were multiplied with the checked WSF2019 dataset.
 
-Detailed steps are provided in the folder:
-**`Building Foot print/`**
+Detailed steps are provided in the folder: 👉 [**`Building Foot print/`**](https://github.com/IssaNasralli/popVAT/tree/main/Building Foot print)
 
 Final dataset used in the study: Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
 
