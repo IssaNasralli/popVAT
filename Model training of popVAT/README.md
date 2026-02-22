@@ -1,0 +1,59 @@
+# Model training of popVAT
+
+This folder contains scripts and resources required to train the **popVAT** model for population mapping using a Variational Autoencoder with hierarchical gating and atrous convolutions.
+
+---
+
+## 1. Files included
+
+- **`test_popVAE_full_Gate.py`** – Main training and inference script. Handles model creation, data loading, training, and evaluation. Supports multiple model options for ablation studies
+- **`data_atrous.py`** – Data processing utilities including:
+
+  - Loading and preprocessing raster datasets  
+  - Generating composite raster bands: mergin the educational POI layers into one comprehensive layer
+
+
+---
+
+## 2. Dependencies
+
+Make sure the following Python packages are installed:
+
+```bash
+tensorflow 2.15.1
+numpy
+pandas
+scikit-learn
+rasterio
+```
+Other requirements:
+
+Python ≥ 3.8
+
+GPU recommended for training (NVIDIA Tesla K80 or higher)
+
+Sufficient RAM for raster processing (≥32 GB recommended)
+
+## 3. Preparing the Data
+Before running the training script, ensure the following:
+
+The final multi-band raster (tunisia10.tif) is available in the working directory.
+
+All preprocessing steps should have been performed using data_atrous.py utilities if needed.
+
+## 4. Training the Model
+
+Use the main script test_popVAE_full_Gate.py to train the model.
+
+Command:
+```bash
+python3 test_popVAE_full_Gate.py \
+    --model_option GAG \
+    --batch_size 1025 \
+    --latent_dim 20 \
+    --patch_size_global 21 \
+    --training 1 \
+    --choice tunisia10 \
+    --country Tunisia \
+    --nb_masks 24 \
+```
