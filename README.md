@@ -107,9 +107,7 @@ Number of floors = pixel height / 3 meters
 
 Detailed steps are provided in the folder "Building Foot print"
 
-Final dataset used in the study:
-
-Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
+Final dataset used in the study: Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
 
 ---
 
@@ -124,13 +122,10 @@ Processing:
 3. Intersect tool identified intersection points.
 4. Point Density tool generated the raster layer.
 
-Data used in the study are provided in:
+Data used in the study are provided in the folder "Road Network"
 
-Road Network/
+Final dataset used in the study: road_densities_12128.tif   👉 [Download](https://drive.google.com/file/d/1VFsWsCtAvKQP5ZiUpeHONPsvq_HDS9ri/view?usp=sharing)
 
-Final dataset:
-
-road.tif
 
 ---
 
@@ -138,13 +133,9 @@ road.tif
 
 Satellite imagery was obtained using **Google Earth Engine**.
 
-Detailed workflow is provided in:
+Detailed workflow is provided in the folder "Satellite Imagery"
+Final dataset used in the study: MODIS.tif   👉 [Download](https://drive.google.com/file/d/1mTkBDegUozfW1Ffla3Dv5yIhrBFuEGwF/view?usp=sharing)
 
-Satellite Imagery/
-
-Final dataset:
-
-MODIS.tif
 
 ---
 
@@ -152,13 +143,9 @@ MODIS.tif
 
 LULC data were also obtained using **Google Earth Engine**.
 
-Details are available in:
+Details are available in the folder "LULC"
 
-Satellite Imagery/
-
-Final dataset:
-
-LULC.tif
+Final dataset used in the study: LULC.tif   👉 [Download](https://drive.google.com/file/d/1TUnvS1eyw--JxcGEyXqEAmc3b82ajoLW/view?usp=sharing)
 
 ---
 
@@ -175,12 +162,13 @@ Height: 8116
 
 Pixel values:
 
-Inside boundary = 1  
+Inside boundary = 1
+
 Outside boundary = 0
 
-Files are provided in:
+Details are available in the folder "GAUL"
 
-Tunisia_Regions/
+Files are provided in the folder "Tunisia_Regions": 24 tif files (24 gouvernorates)
 
 ---
 
@@ -188,14 +176,13 @@ Tunisia_Regions/
 
 Datasets obtained using **Google Earth Engine**.
 
-Processing details:
-
-DEM and Slope/
+Processing details in the folder "DEM and Slope"
 
 Final datasets:
 
-dem.tif  
-slope.tif
+dem.tif  and slope.tif
+
+Final dataset used in the study: dem.tif and slope.tif are compreesed in one file  👉 [Download](https://drive.google.com/file/d/1QWDfKUUns6UzAl5zQU3J6j7ba8rO7Iqt/view?usp=sharing)
 
 ---
 
