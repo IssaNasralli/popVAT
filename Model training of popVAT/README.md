@@ -55,7 +55,7 @@ python3 test_popVAE_full_Gate.py \
     --training 1 \
     --choice tunisia10 \
     --country Tunisia \
-    --nb_masks 24 \
+     --weights	
 ```
 Parameters:
 ```bash
@@ -67,7 +67,6 @@ Parameters:
 --training	1 for training, 0 for inference
 --choice	Base name of input raster file (e.g., tunisia10)
 --country	Country name for district mask loading
---nb_masks	Number of district masks
 --weights	Pre-trained weights file (optional; leave empty to train from scratch)
 
 ```
