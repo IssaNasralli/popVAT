@@ -69,8 +69,7 @@ The original tabular dataset download link is provided in the folder "Educationa
 Because the source platform continuously updates the dataset (overwriting old versions),  
 the exact version used in this study is also provided in the folder "Educational POI":POI.xls
 
-Detailed workflow is provided in the foler
-**`Educational POI/`**
+Detailed workflow is provided in the folder 👉 [**`Educational POI/`**](https://github.com/IssaNasralli/popVAT/tree/main/Educational%20POI)
 
 Final Raster KDE files (three files: KDE_Institute.tif, KDE_Preparatory_School.tif and KDE_School.tif) are available here: 👉 [Download](https://drive.google.com/file/d/1SuQS-xPlnfEbJ7ugH-FrqkZTjLAvFdV-/view?usp=sharing)
 
