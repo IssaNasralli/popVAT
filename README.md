@@ -355,17 +355,19 @@ Architecture diagram:
 
 ![ ](popVAT.png)
 
-We propose popVAT (Population estimation using Variational Autoencoder and Atrous Convolution), an extension of popVAE designed for adaptive hierarchical spatial modeling from multisource geospatial data. The framework integrates multi-scale spatial reasoning within a unified architecture by combining a VAE-based contextual encoder with atrous convolution and learnable gating mechanisms.
+Detailed explanation is available in the folder **"Model architecture of popVAT"**.
 
-The model follows a three-branch design:
+We propose **popVAT** (Population estimation using Variational Autoencoder and Atrous Convolution), an extension of **popVAE** designed for adaptive hierarchical spatial modeling from multisource geospatial data. The framework integrates multi-scale spatial reasoning within a unified architecture by combining a VAE-based contextual encoder with atrous convolution and learnable gating mechanisms.
 
-Medium-range encoder–decoder branch: learns contextual latent representations $\mathbf{z}$.
+The model follows a **three-branch design**:
 
-Pixel-level branch: preserves fine spatial detail.
+1. **Medium-range encoder–decoder branch** – learns contextual latent representations `z`.  
+2. **Pixel-level branch** – preserves fine spatial detail.  
+3. **Global atrous-convolution branch** – captures large-scale spatial dependencies, producing global features `a`.  
 
-Global atrous-convolution branch: captures large-scale spatial dependencies, producing global features $\mathbf{a}$.
+These branches encode fine, medium, and global spatial structures, enabling joint modeling of local texture, neighborhood context, and regional morphology.  
 
-These branches encode fine, medium, and global spatial structures, enabling joint modeling of local texture, neighborhood context, and regional morphology. To adaptively fuse hierarchical information, popVAT employs two gating modules, $G_c$ and $G_g$, which modulate $\mathbf{z}$ and $\mathbf{a}$ before integration with pixel-level features. This mechanism dynamically regulates contextual influence, allowing the network to balance local precision and large-scale spatial awareness during training.
+To adaptively fuse hierarchical information, **popVAT** employs two gating modules, `Gc` and `Gg`, which modulate `z` and `a` before integration with pixel-level features. This mechanism dynamically regulates contextual influence, allowing the network to balance local precision and large-scale spatial awareness during training.
 
 Detailed explanation in the folder "Model architecture of popVAT"
 
