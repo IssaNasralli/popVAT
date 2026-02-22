@@ -14,6 +14,14 @@ This folder contains scripts and resources required to train the **popVAT** mode
 
 
 ---
+### Important:
+
+An Ancillary data  file must already exist  (`tunisia10.tif`) .
+Download the ready file (`tunisia10.tif`) from this link.  👉 [Download](https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing)
+
+A Target population data  file must already exist  (`POP_Tunisia.tif`) .
+Download the ready file (`POP_Tunisia.tif`) from this link.  👉 [Download](https://drive.google.com/file/d/144qTJMNqwMi6JjsT-KorP9HB4IgxaWe5/view?usp=sharing)
+
 
 ## 2. Dependencies
 
@@ -67,6 +75,7 @@ Parameters:
 --weights	Pre-trained weights file (optional; don't include it to train from scratch)
 
 ```
+
 ## 5. Output
 After training, the script will produce:
 
