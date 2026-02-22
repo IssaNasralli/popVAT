@@ -176,3 +176,4 @@ if __name__ == "__main__":
 	
 	#python3 test_popVAE_full_Gate.py --model_option 2 --batch_size 64 --latent_dim 900 --patch_size_global 35 --training 1 --choice tunisia10 --country Tunisia --nb_masks 24 --weights weights.h5
 
+
