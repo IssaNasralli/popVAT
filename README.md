@@ -124,8 +124,7 @@ Processing:
 3. Intersect tool identified intersection points.
 4. Point Density tool generated the raster layer.
 
-Data used in the study are provided in the folder
-**`Road Network/`**
+Data used in the study are provided in the folder 👉 [**`Road Network/`**](https://github.com/IssaNasralli/popVAT/tree/main/Road%20Network)
 
 Final dataset used in the study: road_densities_12128.tif   👉 [Download](https://drive.google.com/file/d/1VFsWsCtAvKQP5ZiUpeHONPsvq_HDS9ri/view?usp=sharing)
 
