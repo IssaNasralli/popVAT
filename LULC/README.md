@@ -50,10 +50,6 @@ FAO/GAUL/2015
 The dataset was generated for the following years:
 
 ```
-2016
-2017
-2018
-2019
 2020
 ```
 
