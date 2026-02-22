@@ -79,6 +79,10 @@ Model architecture JSON: e.g., model_architecture_popVAE_full_Tunisia_GAG_1025_2
 
 ## 6. Notes
 
+- **Pretrained Weights:** A pretrained model corresponding to the best-performing configuration is already provided in this folder:  
+  `best_weights_popVAE_full_Tunisia_GAG_1025_20_21.h5`. You can use it directly for inference or as a starting point for further fine-tuning by specifying it with the `--weights` argument in the training script.
+
+
 Random Seeds: Seeds are set for reproducibility (tf, numpy, random).
 
 Data Reduction Heuristic: Only a subset of the raster pixels is used to match the number of trainable parameters, ensuring stable learning and spatial generalization.
