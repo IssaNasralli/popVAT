@@ -375,15 +375,52 @@ Detailed explanation in the folder "Model architecture of popVAT"
 
 # 4. Training
 
-Training scripts and configuration files are provided in:
+All experiments were conducted on a high-performance computing system running **Ubuntu 22.04 LTS (64-bit)**, equipped with an **AMD Epyc 7443p (24-core × 8) CPU**, **32 GiB of RAM**, and an **NVIDIA Tesla K80 GPU**. The **popVAT** framework was implemented using **TensorFlow** and **Keras**, with auxiliary data processing handled by **Scikit-learn**.
 
-Model training of popVAT/
+### Dataset
 
-This includes:
+The model was trained on the raster-based ancillary dataset for **Tunisia**. To balance computational tractability and prevent overfitting, we adopted a heuristic: the number of training samples is roughly ten times the number of trainable parameters. After reduction, the dataset was randomly split into:
 
-- Hyperparameters  
-- Model configuration  
-- Training procedure  
+- **50% training**  
+- **10% validation**  
+- **40% testing**
+
+This ensures that over **87% of test pixels** originate from unseen geographic areas, simulating real-world deployment scenarios.
+
+### Model Optimization
+
+- **Optimizer:** Adam (default learning rate)  
+- **Training epochs:** 100  
+- **Loss function:** Composite of Mean Squared Error (MSE) for population regression, VAE reconstruction, and Kullback–Leibler divergence (following [Kingma & Welling, 2013](https://arxiv.org/abs/1312.6114))  
+
+This joint objective balances predictive accuracy with spatial regularization, allowing latent representations to maintain coherence across regions.
+
+### Hyperparameter Tuning
+
+A cross-validation procedure explored:
+
+- **Latent dimension (d):** 10–100 (step 10), 100–1000 (step 100)  
+- **Batch size:** {32, 64, 128, 256, 512, 1024}  
+- **Medium patch size (p):** {9, 11, 13, 15}  
+- **Global patch size (p_g):** {17, 21, 25, 31, 35, 41}  
+- **Loss weights (α, β):** {(2,1), (1,1), (1,2), (0.5,1.5), (1.5,0.5)}  
+- **Gating activations:** sigmoid, tanh  
+
+### Optimal Configuration
+
+The best performance was achieved with:
+
+- **d = 20**  
+- **Batch size = 1024**  
+- **p = 11, p_g = 21**  
+- **Loss weights (α, β) = (1,1)**  
+- **Sigmoid** activation for gating modules  
+
+### Scripts and Configuration
+
+Training scripts and configuration files are provided in the folder "Model training of popVAT"
+
+
 
 ---
 
