@@ -16,10 +16,14 @@ pixel-level predictions are aggregated to administrative units and compared with
   Utilities for loading raster data, administrative masks, and census tables.
 
 - **`evaluate.py`**  
-  Functions used to compute evaluation metrics such as:
-  - R²
-  - Mean Absolute Error (MAE)
-  - Mean Squared Error (MSE)
+  Functions used to compute evaluation metrics
+
+  - **`Tunisia_Regions/`**  
+  This folder must be present for the evaluation to run.  
+  It contains **24 raster masks**, one for each Tunisian governorate.  
+  Each mask represents the spatial extent of a governorate and is used to **aggregate pixel-level population predictions into governorate-level population totals** before comparison with official census data.
+
+
 
 More detailed implementation can be explored directly in these files.
 
