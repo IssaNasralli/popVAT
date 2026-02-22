@@ -190,13 +190,10 @@ Final dataset used in the study: dem.tif and slope.tif are compreesed in one fil
 
 Nighttime light data were obtained using **Google Earth Engine**.
 
-Details:
+Details listed in the folder "NTL"
 
-NTL/
+Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Download](https://drive.google.com/file/d/1nDOA5-HVc2mT9du5E-cqIfn_mgDjYw_X/view?usp=sharing)
 
-Final dataset:
-
-NTL.tif
 
 ---
 
