@@ -135,8 +135,7 @@ Final dataset used in the study: road_densities_12128.tif   👉 [Download](http
 
 Satellite imagery was obtained using **Google Earth Engine**.
 
-Detailed workflow is provided in the folder 
-**`Satellite Imagery/`**
+Detailed workflow is provided in the folder  👉 [**`Satellite Imagery/`**](https://github.com/IssaNasralli/popVAT/tree/main/Satellite%20Imagery)
 
 Final dataset used in the study: MODIS.tif   👉 [Download](https://drive.google.com/file/d/1mTkBDegUozfW1Ffla3Dv5yIhrBFuEGwF/view?usp=sharing)
 
@@ -147,9 +146,8 @@ Final dataset used in the study: MODIS.tif   👉 [Download](https://drive.googl
 
 LULC data were also obtained using **Google Earth Engine**.
 
-Details are available in the folder
+Details are available in the folder 👉 [**`LULC/`**](https://github.com/IssaNasralli/popVAT/tree/main/LULC)
 
-**`LULC/`**
 
 
 Final dataset used in the study: LULC.tif   👉 [Download](https://drive.google.com/file/d/1TUnvS1eyw--JxcGEyXqEAmc3b82ajoLW/view?usp=sharing)
@@ -173,13 +171,10 @@ Inside boundary = 1
 
 Outside boundary = 0
 
-Details are available in the folder
-**`GAUL/`**
+Details are available in the folder 👉 [**`GAUL/`**](https://github.com/IssaNasralli/popVAT/tree/main/GAUL)
 
 
-Files are provided in the folder
-**`Tunisia_Regions/`**
-
+Files are provided in the folder 👉 [**`Tunisia_Regions/`**](https://github.com/IssaNasralli/popVAT/tree/main/Tunisia_Regions)
 24 tif files (24 gouvernorates)
 
 ---
@@ -188,8 +183,7 @@ Files are provided in the folder
 
 Datasets obtained using **Google Earth Engine**.
 
-Processing details in the folder
-**`DEM and Slope/`**
+Processing details in the folder [**`DEM and Slope/`**](https://github.com/IssaNasralli/popVAT/tree/main/DEM%20and%20Slope)
 
 Final datasets:
 
@@ -203,8 +197,7 @@ Final dataset used in the study: dem.tif and slope.tif are compreesed in one fil
 
 Nighttime light data were obtained using **Google Earth Engine**.
 
-Details listed in the folder
-**`NTL/`**
+Details listed in the folder 👉 [**`NTL/`**](https://github.com/IssaNasralli/popVAT/tree/main/NTL)
 
 Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Download](https://drive.google.com/file/d/1nDOA5-HVc2mT9du5E-cqIfn_mgDjYw_X/view?usp=sharing)
 
@@ -369,7 +362,6 @@ Architecture diagram:
 
 ![ ](popVAT.png)
 
-Detailed explanation is available in the folder **"Model architecture of popVAT"**.
 
 We propose **popVAT** (Population estimation using Variational Autoencoder and Atrous Convolution), an extension of **popVAE** designed for adaptive hierarchical spatial modeling from multisource geospatial data. The framework integrates multi-scale spatial reasoning within a unified architecture by combining a VAE-based contextual encoder with atrous convolution and learnable gating mechanisms.
 
@@ -383,9 +375,10 @@ These branches encode fine, medium, and global spatial structures, enabling join
 
 To adaptively fuse hierarchical information, **popVAT** employs two gating modules, `Gc` and `Gg`, which modulate `z` and `a` before integration with pixel-level features. This mechanism dynamically regulates contextual influence, allowing the network to balance local precision and large-scale spatial awareness during training.
 
-Detailed explanation in the folder
-**`Model architecture of popVAT/`**
+Detailed explanation is available in the folder 👉 [**"Model architecture of popVAT"**](https://github.com/IssaNasralli/popVAT/tree/main/Model%20architecture%20of%20popVAT)
 
+
+ 
 ---
 
 # 4. Training
@@ -433,8 +426,9 @@ The best performance was achieved with:
 
 ### Scripts and Configuration
 
-Training scripts and configuration files are provided in the folder "Model training of popVAT"
-**`Model Training of popVAT/`**
+Training scripts and configuration files are provided in the folder  👉 [**`Model Training of popVAT/`**](https://github.com/IssaNasralli/popVAT/tree/main/Model%20training%20of%20popVAT)
+
+
 
 
 
@@ -459,9 +453,10 @@ To ensure robustness for large rasters, the inference pipeline:
 - Saves intermediate predictions
 - Uses a checkpoint mechanism allowing the process to resume if interrupted
 
-The detailed scripts and execution instructions are available in the folder:
+The detailed scripts and execution instructions are available in the folder  👉 [**`Model inference of popVAT`**](https://github.com/IssaNasralli/popVAT/tree/main/Model%20inference%20of%20popVAT)
 
-**`Model inference of popVAT`**
+
+
 
 
 # 6. Model evaluation of popVAT
@@ -480,9 +475,10 @@ The evaluation workflow consists of:
 3. Comparing aggregated predictions with census totals.
 4. Computing statistical metrics.
 
-Detailed scripts and execution instructions are provided in:
+Detailed scripts and execution instructions are provided in  👉 [**`Model evaluation of popVAT/`**](https://github.com/IssaNasralli/popVAT/tree/main/Model%20evaluation%20of%20popVAT)
 
-**`Model evaluation of popVAT/`**
+
+
 
 ---
 
