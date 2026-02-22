@@ -54,6 +54,7 @@ python3 test_popVAE_full_Gate.py \
 --country Tunisia \
 --nb_masks 24 \
 --weights
+```
 
 ###Important:
 
