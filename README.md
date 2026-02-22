@@ -384,6 +384,24 @@ Detailed explanation is available in the folder 👉 [**"Model architecture of p
 ---
 
 # 4. Training
+### Dependencies
+
+Make sure the following Python packages are installed:
+
+```bash
+tensorflow 2.15.1
+numpy
+pandas
+scikit-learn
+rasterio
+```
+Other requirements:
+
+Python ≥ 3.8
+
+GPU recommended for training (NVIDIA Tesla K80 or higher)
+
+Sufficient RAM for raster processing (≥32 GB recommended)
 
 All experiments were conducted on a high-performance computing system running **Ubuntu 22.04 LTS (64-bit)**, equipped with an **AMD Epyc 7443p (24-core × 8) CPU**, **32 GiB of RAM**, and an **NVIDIA Tesla K80 GPU**. The **popVAT** framework was implemented using **TensorFlow** and **Keras**, with auxiliary data processing handled by **Scikit-learn**.
 
