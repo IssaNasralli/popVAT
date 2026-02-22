@@ -82,9 +82,7 @@ Download via HOT Export Tool:
 
 https://export.hotosm.org/
 
-LU data used in the study (lines shapefile) are provided in:
-
-LU/
+LU data used in the study (polygons shapefile) are provided in the folder "LU"
 
 Rasterization of non-residential areas instructions are provided in the same folder.
 
