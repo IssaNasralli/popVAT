@@ -56,15 +56,9 @@ They handle batching, patch extraction, and shuffling for efficient training.
 
 ---
 
-## Notes
+## Note
 
-- This README provides a **high-level overview**.  
 - Detailed implementation, hyperparameters, and usage examples are available by exploring `popVAE_full_Gate_Atrous_Gate.py`.
 
 ---
 
-## References
-
-- **popVAE**: base model for hierarchical population estimation.  
-- Atrous convolution: captures multi-scale spatial context.  
-- Variational Autoencoder: learns probabilistic latent representations.
