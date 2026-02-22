@@ -46,7 +46,7 @@ Example command:
 
 ```bash
 python3 r_squared.py \
---raster tunisia10_popVAE_full_GAG_1024_30_best_weights_popVAE_full_Tunisia_GAG_1024_30.h5_predicted.tif \
+--raster tunisia10_popVAE_full_GAG_1025_20__best_weights_popVAE_full_Tunisia_GAG_1025_20_21.h5__21_predicted.tif \
 --csv ins_population.csv \
 ```
 
