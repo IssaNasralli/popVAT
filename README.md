@@ -70,7 +70,7 @@ the exact version used in this study is also provided in the folder "Educational
 
 Detailed workflow is provided in the foler "Educational POI"
 
-Final Raster KDE files (three files) are available here: 👉 [Download](https://drive.google.com/file/d/1SuQS-xPlnfEbJ7ugH-FrqkZTjLAvFdV-/view?usp=sharing)
+Final Raster KDE files (three files: KDE_Institute.tif, KDE_Preparatory_School.tif and KDE_School.tif) are available here: 👉 [Download](https://drive.google.com/file/d/1SuQS-xPlnfEbJ7ugH-FrqkZTjLAvFdV-/view?usp=sharing)
 
 ---
 
