@@ -45,18 +45,15 @@ All preprocessing steps should have been performed using data_atrous.py utilitie
 
 Use the main script test_popVAE_full_Gate.py to train the model.
 
-Command:
+Command to train based on pre-trained model:
 ```bash
-python3 test_popVAE_full_Gate.py \
-    --model_option GAG \
-    --batch_size 1025 \
-    --latent_dim 20 \
-    --patch_size_global 21 \
-    --training 1 \
-    --choice tunisia10 \
-    --country Tunisia \
-     --weights	
+python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 1 --choice tunisia10 --country Tunisia --weights best_weights_popVAE_full_Tunisia_GAG_1025_20_21.h5
 ```
+Command to train from scratch (No pre-trained model):
+```bash
+python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 1 --choice tunisia10 --country Tunisia	
+```
+
 Parameters:
 ```bash
 
@@ -67,7 +64,7 @@ Parameters:
 --training	1 for training, 0 for inference
 --choice	Base name of input raster file (e.g., tunisia10)
 --country	Country name for district mask loading
---weights	Pre-trained weights file (optional; leave empty to train from scratch)
+--weights	Pre-trained weights file (optional; don't include it to train from scratch)
 
 ```
 ## 5. Output
