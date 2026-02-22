@@ -481,7 +481,7 @@ The evaluation workflow consists of:
 1. Generating the predicted population raster at 100 m resolution.
 2. Aggregating pixel predictions within each administrative region.
 3. Comparing aggregated predictions with census totals.
-4. Computing statistical metrics such as **R², MAE, and MSE**.
+4. Computing statistical metrics.
 
 Detailed scripts and execution instructions are provided in:
 
