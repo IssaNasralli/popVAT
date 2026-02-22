@@ -135,7 +135,7 @@ var CollectImagesForRegionAndYear = function(regionName, level, admName, startYe
 };
 
 // Run for Tunisia
-CollectImagesForRegionAndYear('Tunisia', 'level0', 'ADM0_NAME', 2016, 2020);
+CollectImagesForRegionAndYear('Tunisia', 'level0', 'ADM0_NAME', 2020, 2020);
 ```
 
 ---
@@ -147,10 +147,6 @@ The script exports yearly LULC rasters to **Google Earth Engine assets**.
 Example outputs:
 
 ```
-DynamicWorld_Tunisia_2016
-DynamicWorld_Tunisia_2017
-DynamicWorld_Tunisia_2018
-DynamicWorld_Tunisia_2019
 DynamicWorld_Tunisia_2020
 ```
 
