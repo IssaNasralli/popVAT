@@ -107,7 +107,7 @@ Number of floors = pixel height / 3 meters
 
 4. Floors were multiplied with the checked WSF2019 dataset.
 
-Detailed steps are provided in the folder: 👉 [**`Building Foot print/`**](https://github.com/IssaNasralli/popVAT/tree/main/Building%20Foot%20print)
+Detailed steps are provided in the folder: 👉 [**`Building Foot print/`**](https://github.com/IssaNasralli/popVAT/tree/main/Buildin%20Foot%20Print)
 
 Final dataset used in the study: Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
 
