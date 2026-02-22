@@ -467,7 +467,7 @@ The detailed scripts and execution instructions are available in the folder:
 **`Model inference of popVAT`**
 
 
-## 6. Raster Population Prediction Map at the Pixel Level
+# 6. Raster Population Prediction Map at the Pixel Level
 
 The popVAT model produces **population predictions at the pixel level (100 m spatial resolution)**.  
 Each pixel in the output raster represents the estimated number of people living within that grid cell.
