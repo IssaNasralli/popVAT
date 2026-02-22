@@ -197,7 +197,7 @@ Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Downl
 
 ---
 
-## 2.3 Visualizing and Inspecting the Dataset in ArcGIS Pro
+# 2.3 Visualizing and Inspecting the Dataset in ArcGIS Pro
 
 The final dataset (`tunisia10.tif`) is a multi-band raster that can be easily explored using ArcGIS Pro.
 
