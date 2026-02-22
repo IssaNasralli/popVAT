@@ -40,7 +40,8 @@ Because some of these datasets require downloading **global rasters and extracti
 
 Folder:
 
-Population Data/
+
+**`Population Data/`**
 
 Files:
 
@@ -68,7 +69,8 @@ The original tabular dataset download link is provided in the folder "Educationa
 Because the source platform continuously updates the dataset (overwriting old versions),  
 the exact version used in this study is also provided in the folder "Educational POI":POI.xls
 
-Detailed workflow is provided in the foler "Educational POI"
+Detailed workflow is provided in the foler
+**`Educational POI/`**
 
 Final Raster KDE files (three files: KDE_Institute.tif, KDE_Preparatory_School.tif and KDE_School.tif) are available here: 👉 [Download](https://drive.google.com/file/d/1SuQS-xPlnfEbJ7ugH-FrqkZTjLAvFdV-/view?usp=sharing)
 
@@ -82,7 +84,8 @@ Download via HOT Export Tool:
 
 https://export.hotosm.org/
 
-LU data used in the study (polygons shapefile) are provided in the folder "LU"
+LU data used in the study (polygons shapefile) are provided in the folder 
+**`LU/`**
 
 Rasterization of non-residential areas instructions are provided in the same folder.
 
@@ -105,7 +108,8 @@ Number of floors = pixel height / 3 meters
 
 4. Floors were multiplied with the checked WSF2019 dataset.
 
-Detailed steps are provided in the folder "Building Foot print"
+Detailed steps are provided in the folder:
+**`Building Foot print/`**
 
 Final dataset used in the study: Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif   👉 [Download](https://drive.google.com/file/d/1qPOQBsoA2vIOGjng7ZVT7OWqlF6S1oxa/view?usp=sharing)
 
@@ -122,7 +126,8 @@ Processing:
 3. Intersect tool identified intersection points.
 4. Point Density tool generated the raster layer.
 
-Data used in the study are provided in the folder "Road Network"
+Data used in the study are provided in the folder
+**`Road Network/`**
 
 Final dataset used in the study: road_densities_12128.tif   👉 [Download](https://drive.google.com/file/d/1VFsWsCtAvKQP5ZiUpeHONPsvq_HDS9ri/view?usp=sharing)
 
@@ -133,7 +138,9 @@ Final dataset used in the study: road_densities_12128.tif   👉 [Download](http
 
 Satellite imagery was obtained using **Google Earth Engine**.
 
-Detailed workflow is provided in the folder "Satellite Imagery"
+Detailed workflow is provided in the folder 
+**`Satellite Imagery/`**
+
 Final dataset used in the study: MODIS.tif   👉 [Download](https://drive.google.com/file/d/1mTkBDegUozfW1Ffla3Dv5yIhrBFuEGwF/view?usp=sharing)
 
 
@@ -143,7 +150,10 @@ Final dataset used in the study: MODIS.tif   👉 [Download](https://drive.googl
 
 LULC data were also obtained using **Google Earth Engine**.
 
-Details are available in the folder "LULC"
+Details are available in the folder
+
+**`LULC/`**
+
 
 Final dataset used in the study: LULC.tif   👉 [Download](https://drive.google.com/file/d/1TUnvS1eyw--JxcGEyXqEAmc3b82ajoLW/view?usp=sharing)
 
@@ -166,9 +176,14 @@ Inside boundary = 1
 
 Outside boundary = 0
 
-Details are available in the folder "GAUL"
+Details are available in the folder
+**`GAUL/`**
 
-Files are provided in the folder "Tunisia_Regions": 24 tif files (24 gouvernorates)
+
+Files are provided in the folder
+**`Tunisia_Regions/`**
+
+24 tif files (24 gouvernorates)
 
 ---
 
@@ -176,7 +191,8 @@ Files are provided in the folder "Tunisia_Regions": 24 tif files (24 gouvernorat
 
 Datasets obtained using **Google Earth Engine**.
 
-Processing details in the folder "DEM and Slope"
+Processing details in the folder
+**`DEM and Slope/`**
 
 Final datasets:
 
@@ -190,7 +206,8 @@ Final dataset used in the study: dem.tif and slope.tif are compreesed in one fil
 
 Nighttime light data were obtained using **Google Earth Engine**.
 
-Details listed in the folder "NTL"
+Details listed in the folder
+**`NTL/`**
 
 Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Download](https://drive.google.com/file/d/1nDOA5-HVc2mT9du5E-cqIfn_mgDjYw_X/view?usp=sharing)
 
@@ -369,7 +386,8 @@ These branches encode fine, medium, and global spatial structures, enabling join
 
 To adaptively fuse hierarchical information, **popVAT** employs two gating modules, `Gc` and `Gg`, which modulate `z` and `a` before integration with pixel-level features. This mechanism dynamically regulates contextual influence, allowing the network to balance local precision and large-scale spatial awareness during training.
 
-Detailed explanation in the folder "Model architecture of popVAT"
+Detailed explanation in the folder
+**`Model architecture of popVAT/`**
 
 ---
 
@@ -419,6 +437,7 @@ The best performance was achieved with:
 ### Scripts and Configuration
 
 Training scripts and configuration files are provided in the folder "Model training of popVAT"
+**`Model Training of popVAT/`**
 
 
 
@@ -445,7 +464,7 @@ To ensure robustness for large rasters, the inference pipeline:
 
 The detailed scripts and execution instructions are available in the folder:
 
-**`Model inference of popVAT/`**
+**`Model inference of popVAT`**
 
 
 # 5. Evaluation
