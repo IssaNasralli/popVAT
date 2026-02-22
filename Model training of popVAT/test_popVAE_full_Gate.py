@@ -158,32 +158,11 @@ def main():
         model.save(weights)
         noweights=0
    
-    if(noweights==0):
-        profile.update(dtype=rasterio.float32, count=1, nodata=0.0)
-        # Create the model
-        if(model_option=="G"):
-            predicted_image = popVAE.predict_and_reconstruct_G(model, input_data, profile, output_prediction, patch_size, bands, bands, 5000, checkpoint_file=checkpoint_file)
-        else:
-            predicted_image = popVAE.predict_and_reconstruct_GAG_GA(model, input_data, profile, output_prediction, patch_size, patch_size_global, bands, bands, 5000, checkpoint_file=checkpoint_file)
-            
-        print("Evaluating Start")
-
-        ins_population = data.load_ins_population_data(ins_population_csv)
-        ev.calculate_district_r2(predicted_image, district_masks, ins_population)
-        print("Evaluating Finish of:")
-        print ("model_option = ", model_option)
-        print ("Country = ", country)
-        print ("training = ", training)
-        print ("batch_size = ", batch_size)
-        print ("latent_dim = ", latent_dim)
-        print ("patch_size_global = ", patch_size_global)  
-        print ("weights = ", weights)  
-    else:
-        print("No weights for prediction.")
 
 if __name__ == "__main__":
     main()
 
 	
 	#python3 test_popVAE_full_Gate.py --model_option 2 --batch_size 64 --latent_dim 900 --patch_size_global 35 --training 1 --choice tunisia10 --country Tunisia --nb_masks 24 --weights weights.h5
+
 
