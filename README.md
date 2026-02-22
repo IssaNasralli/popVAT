@@ -202,10 +202,8 @@ Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Downl
 The final dataset (`tunisia10.tif`) is a multi-band raster that can be easily explored using ArcGIS Pro.
 
 ### Step 1 — Download the dataset
-Download the file from the link below and extract it if necessary.
+Download the file from the link below and extract it if necessary.  👉 [Download](https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing)
 
-Dataset:
-https://drive.google.com/file/d/12YaLwfOp-IPpgUMciMzb_lOR_eK4aL5B/view?usp=sharing
 
 ### Step 2 — Open ArcGIS Pro
 Launch ArcGIS Pro and create a new project (Map project is sufficient).
