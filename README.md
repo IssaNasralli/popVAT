@@ -353,11 +353,9 @@ The popVAT architecture extends popVAE with a modified deep learning model.
 
 Architecture diagram:
 
-Figure_2_popVAT.png
+![ ](popVAT.png)
 
-Detailed explanation:
-
-Model architecture of popVAT/
+Detailed explanation in the folder "Model architecture of popVAT"
 
 ---
 
