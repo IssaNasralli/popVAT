@@ -56,7 +56,7 @@ python3 test_popVAE_full_Gate.py \
 --weights
 ```
 
-###Important:
+### Important:
 
 training 0 switches the program to inference mode.
 
@@ -66,9 +66,9 @@ A trained weights file must already exist.
 
 If the --weights parameter is not explicitly provided, the script automatically constructs the expected file name using the provided parameters:
 
-'''
+```
 best_weights_popVAE_full_{country}_{model_option}_{batch_size}_{latent_dim}_{patch_size_global}.h5
-'''
+```
 This file must already exist in the working directory.
 
 
