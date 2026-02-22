@@ -63,7 +63,7 @@ Educational POIs include:
 - Preparatory schools  
 - Institutes  
 
-The original tabular dataset download link is provided in the repository.
+The original tabular dataset download link is provided in the folder Educational POI.
 
 Because the source platform continuously updates the dataset (overwriting old versions),  
 the exact version used in this study is also provided:
