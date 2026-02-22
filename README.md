@@ -63,36 +63,15 @@ Educational POIs include:
 - Preparatory schools  
 - Institutes  
 
-The original tabular dataset download link is provided in the folder Educational POI.
+The original tabular dataset download link is provided in the folder "Educational POI".
 
 Because the source platform continuously updates the dataset (overwriting old versions),  
 the exact version used in this study is also provided:
 
 POI.xls
+Detailed workflow is provided in the foler "Educational POI"
 
-### Processing Steps (ArcGIS Pro)
-
-1. Import the tabular dataset.
-2. Convert the table to **point vector data**.
-3. Separate features into:
-   - Schools
-   - Preparatory schools
-   - Institutes
-4. Apply **Kernel Density Estimation (KDE)**.
-
-Parameters used:
-
-Search radius (bandwidth): 5 km  
-Method: Planar  
-Area units: Square kilometers  
-
-Shapefiles are available in:
-
-Educational POI/
-
-Final dataset:
-
-POI.tif
+Final dataset in the folder Educational POI: POI.tif
 
 ---
 
