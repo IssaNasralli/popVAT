@@ -455,7 +455,17 @@ Training scripts and configuration files are provided in the folder  ðŸ‘‰ [**`Mo
 ---
 
 # 5. Raster Population Prediction Map at the Pixel Level
+### Dependencies
 
+Make sure the following Python packages are installed:
+
+```bash
+tensorflow 2.15.0
+numpy
+pandas
+scikit-learn
+rasterio
+```
 After training the model, the next step consists of generating a full **population prediction raster**.
 
 The inference process scans the ancillary dataset pixel by pixel.  
@@ -480,7 +490,16 @@ The detailed scripts and execution instructions are available in the folder  ðŸ‘
 
 
 # 6. Model evaluation of popVAT
+### Dependencies
 
+Make sure the following Python packages are installed:
+
+```bash
+numpy
+pandas
+scikit-learn
+rasterio
+```
 The popVAT model produces **population predictions at the pixel level (100 m spatial resolution)**.  
 Each pixel in the output raster represents the estimated number of people living within that grid cell.
 
