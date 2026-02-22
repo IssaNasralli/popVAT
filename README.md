@@ -197,6 +197,82 @@ Final dataset used in the study: Nighttime_Lights_Tunisia_2020.tif   👉 [Downl
 
 ---
 
+## 2.3 Creating the Final Multi-Band Dataset in ArcGIS Pro
+
+The final dataset (`tunisia10.tif`) is produced by stacking all prepared raster layers into a single multi-band raster using ArcGIS Pro.
+
+### Input rasters
+
+The following raster layers are required:
+
+- KDE_Institute.tif  
+- KDE_Preparatory_School.tif  
+- KDE_School.tif  
+- Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif  
+- road_densities_12128.tif  
+- MODIS.tif (3 bands)  
+- LULC.tif  
+- dem.tif  
+- slope.tif  
+- Nighttime_Lights_Tunisia_2020.tif  
+
+### Important preparation
+
+Before stacking, make sure that all rasters:
+
+- Use the same coordinate system (**WGS84 / UTM Zone 32N – EPSG:32632**)
+- Have the same spatial resolution
+- Are aligned to the same grid
+- Cover the same geographic extent
+
+If needed, use the following ArcGIS Pro tools:
+
+- **Project Raster**
+- **Resample**
+- **Clip**
+- **Snap Raster** (environment setting)
+
+### Create the multi-band raster
+
+1. Open **ArcGIS Pro**.
+2. Go to **Analysis → Tools**.
+3. Search for **Composite Bands**.
+4. Add the rasters in the following order:
+
+```
+KDE_Institute.tif
+KDE_Preparatory_School.tif
+KDE_School.tif
+Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif
+road_densities_12128.tif
+MODIS.tif
+LULC.tif
+dem.tif
+slope.tif
+Nighttime_Lights_Tunisia_2020.tif
+```
+
+5. Choose an output location.
+6. Set the output name:
+
+```
+tunisia10.tif
+```
+
+7. Run the tool.
+
+### Result
+
+The generated raster contains **12 bands**:
+
+- 9 single-band layers
+- 1 MODIS raster containing **3 bands**
+
+Total = **12 bands**.
+
+This file corresponds to the dataset used for training and evaluation in the study.
+
+
 # 2.3 Visualizing and Inspecting the Dataset in ArcGIS Pro
 
 The final dataset (`tunisia10.tif`) is a multi-band raster that can be easily explored using ArcGIS Pro.
