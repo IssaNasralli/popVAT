@@ -47,7 +47,7 @@ FAO/GAUL/2015
 
 # Time Period
 
-The dataset was generated for the following years:
+The dataset was generated for the following year:
 
 ```
 2020
