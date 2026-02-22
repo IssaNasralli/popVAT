@@ -424,6 +424,30 @@ Training scripts and configuration files are provided in the folder "Model train
 
 ---
 
+## 5. Raster Population Prediction Map at the Pixel Level
+
+After training the model, the next step consists of generating a full **population prediction raster**.
+
+The inference process scans the ancillary dataset pixel by pixel.  
+For each pixel:
+
+1. A local patch and a larger contextual patch are extracted from the multi-band raster.
+2. These inputs are passed through the trained **popVAT** model.
+3. The model predicts the population value associated with that pixel.
+4. The predicted value is written to the output raster.
+
+This procedure iterates horizontally and vertically over the entire study area until a complete population map is reconstructed.
+
+To ensure robustness for large rasters, the inference pipeline:
+- Processes pixels in batches
+- Saves intermediate predictions
+- Uses a checkpoint mechanism allowing the process to resume if interrupted
+
+The detailed scripts and execution instructions are available in the folder:
+
+**`Model inference of popVAT/`**
+
+
 # 5. Evaluation
 
 Evaluation scripts and metrics are provided in:
