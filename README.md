@@ -44,10 +44,10 @@ Population Data/
 
 Files:
 
-worldpop.tif  
+POP.tif  
 gpwv4.tif  
 landscan.tif  
-INS.xls  
+ins_population.csv 
 
 Users can either download the original datasets or directly use the provided files.
 
