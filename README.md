@@ -209,8 +209,7 @@ For convenience, the final dataset is also provided (tunisia10.tif):  👉 [Down
 Characteristics:
 
 - Original 12 bands
-- Educational POIs merged into one layer
-- Final dataset contains **10 bands**
+- Educational POIs merged later into one layer: Final dataset contains **10 bands**
 
 ---
 
