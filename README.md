@@ -467,17 +467,25 @@ The detailed scripts and execution instructions are available in the folder:
 **`Model inference of popVAT`**
 
 
-# 5. Evaluation
+## 6. Raster Population Prediction Map at the Pixel Level
 
-Evaluation scripts and metrics are provided in:
+The popVAT model produces **population predictions at the pixel level (100 m spatial resolution)**.  
+Each pixel in the output raster represents the estimated number of people living within that grid cell.
 
-Evaluation of popVAT/
+However, as commonly done in the population-mapping literature, model evaluation cannot rely on pixel-level ground truth because such data rarely exists. Instead, predictions are **aggregated to administrative regions** and compared with official census statistics.
 
-Includes:
+In this work, evaluation is performed using **official population counts provided by the Tunisian National Institute of Statistics (INS)** at the **governorate level**.
 
-- Testing procedure  
-- Metrics  
-- Result generation  
+The evaluation workflow consists of:
+
+1. Generating the predicted population raster at 100 m resolution.
+2. Aggregating pixel predictions within each administrative region.
+3. Comparing aggregated predictions with census totals.
+4. Computing statistical metrics such as **R², MAE, and MSE**.
+
+Detailed scripts and execution instructions are provided in:
+
+**`Model evaluation of popVAT/`**
 
 ---
 
