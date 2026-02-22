@@ -57,3 +57,31 @@ python3 test_popVAE_full_Gate.py \
     --country Tunisia \
     --nb_masks 24 \
 ```
+Parameters:
+```bash
+
+--model_option	Model variant for ablation
+--batch_size	Training batch size
+--latent_dim	Dimension of latent representation
+--patch_size_global	Size of the global patch for atrous convolution
+--training	1 for training, 0 for inference
+--choice	Base name of input raster file (e.g., tunisia10)
+--country	Country name for district mask loading
+--nb_masks	Number of district masks
+--weights	Pre-trained weights file (optional; leave empty to train from scratch)
+
+```
+## 5. Output
+After training, the script will produce:
+
+Model weights: e.g., best_weights_popVAE_full_Tunisia_GAG_1025_20_21.h5
+
+Model architecture JSON: e.g., model_architecture_popVAE_full_Tunisia_GAG_1025_20_21.json
+
+## 6. Notes
+
+Random Seeds: Seeds are set for reproducibility (tf, numpy, random).
+
+Data Reduction Heuristic: Only a subset of the raster pixels is used to match the number of trainable parameters, ensuring stable learning and spatial generalization.
+
+Logging: Training progress results are printed in the console and saved in checkpoint files.
