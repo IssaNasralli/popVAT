@@ -1,4 +1,4 @@
-# Building Foot print
+# Model evaluation of popVAT
 
 This folder contains the scripts used to **evaluate the predicted population maps** produced by popVAT.
 
