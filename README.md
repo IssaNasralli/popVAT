@@ -249,16 +249,16 @@ If needed, use the following ArcGIS Pro tools:
 4. Add the rasters in the following order:
 
 ```
-KDE_Institute.tif
-KDE_Preparatory_School.tif
-KDE_School.tif
-Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif
-road_densities_12128.tif
 MODIS.tif
+Nighttime_Lights_Tunisia_2020.tif
+Tunisia_floor_WSF2019_WGS_84_32N_0to1_residentiel.tif
 LULC.tif
 dem.tif
 slope.tif
-Nighttime_Lights_Tunisia_2020.tif
+road_densities_12128.tif
+KDE_School.tif
+KDE_Preparatory_School.tif
+KDE_Institute.tif
 ```
 
 5. Choose an output location.
