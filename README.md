@@ -42,8 +42,7 @@ Because some of these datasets require downloading **global rasters and extracti
 
 Folder:
 
-
-**`Population Data/`**
+👉 [**`Population Data/`**](https://github.com/IssaNasralli/popVAT/tree/main/Population%20Data)
 
 Files:
 
