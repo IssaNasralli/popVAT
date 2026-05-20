@@ -150,7 +150,7 @@ Converts thresholded binary masks into RGB visualization rasters where:
 Run:
 
 ```bash
-python color255.py --path output_threshold_0.9
+python color.py --path output_threshold_0.9
 ```
 
 This creates:
