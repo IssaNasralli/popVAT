@@ -54,7 +54,6 @@ Create `requirements.txt`:
     │── TriFusion_Gate_Atrous_Gate.py   # Model definition
     │── predict.py                       # Run inference on all GeoTIFFs in test_dem/
     │── threshold.py                     # Apply threshold to probability maps
-    │── weight.h5                        # Pretained model
     │
     │
     ├── test_updated/                        # UPDATED test GeoTIFFs (5 bands: R,G,B,DEM,Slope)
@@ -90,7 +89,7 @@ This creates:
 ---
 
 ### 2) Apply Threshold (binary masks)
-Converts probability maps to **binary** masks using a user-defined threshold (e.g., 0.90). The result contains **white (1)** for building and **black (0)** for background.
+Converts probability maps to **binary** masks using a user-defined threshold (e.g., 0.50). The result contains **white (1)** for building and **black (0)** for background.
 
     python threshold.py --threshold 0.9
 
