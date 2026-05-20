@@ -34,7 +34,7 @@ Administrative-level evaluation was performed using official 2020 population sta
 The pretrained popVAT model achieved an excellent coefficient of determination:
 
 \[
-R^2 = 0.9636
+R² = 0.9636
 \]
 
 This result confirms that popVAT preserves strong predictive performance in a completely different national context, highlighting the model's ability to generalize across countries without any architectural modification.
