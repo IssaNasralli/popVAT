@@ -320,7 +320,7 @@ Example:
 ```bash
 python predict.py
 python threshold.py --threshold 0.9
-python color255.py --path output_threshold_0.9
+python color.py --path output_threshold_0.9
 ```
 
 ---
@@ -355,17 +355,3 @@ python color255.py --path output_threshold_0.9
 
 ---
 
-# 📜 License
-
-This repository is intended for academic and research purposes.
-
----
-
-# 🙏 Acknowledgments
-
-- Massachusetts Buildings Dataset
-- TensorFlow
-- Rasterio
-- QGIS
-- Google Earth Engine
-- ArcGIS
