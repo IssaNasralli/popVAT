@@ -43,10 +43,7 @@ This result confirms that popVAT preserves strong predictive performance in a co
 
 # Quick Start for Testing on France
 
-> **ℹ️ Note:** This repository provides a **quick test harness** for the pretrained **popVAT** model.  
-> It is intended for **fast experimentation on small sample GeoTIFFs**.
-
-> **To reproduce the full workflow from raw data, follow the pipeline below:**
+> **ℹ️ Note: **To reproduce the full workflow from raw data, follow the pipeline below:**
 >
 > ```text
 > Data Collection and Preprocessing (ArcGIS & Google Earth Engine)
