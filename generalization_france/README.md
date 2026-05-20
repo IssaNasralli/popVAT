@@ -105,7 +105,7 @@ The evaluation follows the standard approach used in population-mapping studies:
 - `France_Regions/`  
   This folder must be present for the evaluation to run. It contains **8 raster masks**, each representing one administrative subdivision used in the experiment. These masks are used to aggregate pixel-level population predictions into region-level population totals.
 
-- `ins_population.csv`  
+- `insee_population.csv`  
   Official 2020 population statistics from INSEE.
 
 ---
@@ -130,7 +130,7 @@ This procedure measures how accurately the model reproduces official population 
 ```bash
 python evaluate.py \
   --raster france10_popVAE_full_GAG_1025_20__best_weights_popVAE_full_France_GAG_1025_20_21.h5__21_predicted.tif \
-  --csv ins_population.csv \
+  --csv insee_population.csv \
   --region France \
   --nb_masks 8
 ```
