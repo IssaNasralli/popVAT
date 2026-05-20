@@ -5,7 +5,7 @@ This repository includes a cross-country validation experiment demonstrating tha
 The experiment was conducted on **Île-de-France**, the most densely populated metropolitan region in France, to assess whether the proposed architecture remains effective under different geographic, demographic, and urban conditions.
 
 > **Objective**  
-> The goal of this experiment is **not to train a France-specific model**, but rather to evaluate the robustness and transferability of the popVAT architecture using exactly the same methodology and configuration developed for Tunisia.
+> The goal of this experiment is ** to train a France-specific model**,  then to evaluate the robustness and transferability of the popVAT architecture using exactly the same methodology and configuration developed for Tunisia.
 
 ---
 
