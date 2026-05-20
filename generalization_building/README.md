@@ -54,6 +54,7 @@ Create `requirements.txt`:
     │── TriFusion_Gate_Atrous_Gate.py   # Model definition
     │── predict.py                       # Run inference on all GeoTIFFs in test_dem/
     │── threshold.py                     # Apply threshold to probability maps
+    │── weight.h5                        # Pretained model
     │
     │
     ├── test_updated/                        # UPDATED test GeoTIFFs (5 bands: R,G,B,DEM,Slope)
