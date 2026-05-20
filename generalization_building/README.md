@@ -184,11 +184,68 @@ into turquoise:
 | Building | (64, 224, 208) | Turquoise |
 | Background | (255, 255, 255) | White |
 
-### Notes
 
-- The script expects **3-band RGB masks** as input.
-- Outputs are saved as **uint8 RGB GeoTIFFs**.
-- Raster metadata and georeferencing are preserved.
+## 4) Simple Overlay Visualization with Paint
+
+You can quickly visualize the detected buildings without GIS software by overlaying the colorized mask onto the original image using Microsoft Paint.
+
+### Steps
+
+1. Open:
+
+```text
+output_colorized/1_updated.tif
+```
+
+with **Paint** (`paint.exe`).
+
+2. Press:
+
+```text
+Ctrl + A
+```
+
+to select the entire image.
+
+3. Press:
+
+```text
+Ctrl + C
+```
+
+to copy the colorized building mask.
+
+4. Open:
+
+```text
+test/1.tif
+```
+
+with **Paint**.
+
+5. In Paint, activate:
+
+```text
+Select → Transparent Selection
+```
+
+6. Press:
+
+```text
+Ctrl + V
+```
+
+to paste the copied mask onto the original image.
+
+7. The turquoise regions will appear over the original RGB image, providing a simple visualization of the detected buildings.
+
+### Result
+
+- Turquoise overlay → detected buildings
+- Original RGB image → background reference
+
+This provides a lightweight alternative to GIS visualization tools for quick qualitative inspection.
+
 
 ---
 
