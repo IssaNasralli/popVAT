@@ -3,8 +3,8 @@ import numpy as np
 import tensorflow as tf
 import rasterio
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-from TriFusion_Gate_Atrous_Gate import create_TriFusion
-import TriFusion_Gate_Atrous_Gate as TriF
+from popVAE_Gate_Atrous_Gate_Building import create_popVAT_Building
+import popVAE_Gate_Atrous_Gate_Building as popVAT_Building
 from tensorflow.keras import backend as K
 
 import argparse
@@ -194,7 +194,7 @@ def predict_test_images(model, input_data_paths, patch_size_global, patch_size, 
         with open(processed_file, "a") as f:
             f.write(input_path + "\n")
 # ========== ARGPARSE ==========
-parser = argparse.ArgumentParser(description="Train TriFusion model with configurable parameters.")
+parser = argparse.ArgumentParser(description="Train popVAT_Building model with configurable parameters.")
 parser.add_argument("--model_option", type=str, default="GAG", help="Model Option")
 parser.add_argument("--patch_size_global", type=int, default=35, help="Global patch size")
 parser.add_argument("--latent_dim", type=int, default=50, help="Latent dimension")
@@ -237,7 +237,7 @@ print ("Load test_updated...")
 test_input_paths = get_sorted_tif_paths(test_dem_dir)
 
 # ========== MODEL ==========
-model = create_TriFusion(
+model = create_popVAT_Building(
     patch_size=PATCH_SIZE,
     patch_size_global=PATCH_SIZE_GLOBAL,
     latent_dim=LATENT_DIM,
@@ -257,4 +257,3 @@ except:
 
 if(noweights==0):
 	predict_test_images(model, test_input_paths, PATCH_SIZE_GLOBAL, PATCH_SIZE, BANDS)
-
