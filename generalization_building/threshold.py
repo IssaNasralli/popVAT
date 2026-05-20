@@ -58,11 +58,12 @@ def threshold_images(input_data_paths, THRESHOLD):
 # ========== ARGPARSE ==========
 parser = argparse.ArgumentParser(description="Train TriFusion model with configurable parameters.")
 parser.add_argument("--path", type=str, default="output", help="path")
-parser.add_argument("--threshold", type=float, default=0.9, help="threshold")
+parser.add_argument("--threshold", type=float, default=0.8, help="threshold")
 
 args = parser.parse_args()
 
 
+#python3 r_squared.py --raster tunisia10_popVAE_full_GAG_1024_30_best_weights_popVAE_full_Tunisia_GAG_1024_30.h5_predicted.tif --csv ins_population.csv --region Tunisia --nb_masks 24
 
 # ========== CONFIGURATION ==========
 PATH = args.path
