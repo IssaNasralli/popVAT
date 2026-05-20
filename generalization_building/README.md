@@ -61,8 +61,9 @@ popVAT_Building-Test/
 │── README.md
 │── TriFusion_Gate_Atrous_Gate.py   # Model definition
 │── predict.py                      # Run inference on all GeoTIFFs in test_updated/
-│── threshold.py                    # Apply threshold to probability maps
-│── color255.py                     # Convert binary masks into turquoise RGB visualizations
+│── threshold.py                    # Apply threshold to probability maps to create binary masks
+│── color.py                        # Convert binary masks into turquoise RGB visualizations
+│── wheight.h5                      # Best weight 
 │
 ├── test_updated/                   # UPDATED test GeoTIFFs (5 bands: R,G,B,DEM,Slope)
 │   ├── 1_updated.tif
