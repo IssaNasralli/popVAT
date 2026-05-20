@@ -90,7 +90,7 @@ This creates:
 ---
 
 ### 2) Apply Threshold (binary masks)
-Converts probability maps to **binary** masks using a user-defined threshold (e.g., 0.50). The result contains **white (1)** for building and **black (0)** for background.
+Converts probability maps to **binary** masks using a user-defined threshold (e.g., 0.90). The result contains **white (1)** for building and **black (0)** for background.
 
     python threshold.py --threshold 0.9
 
