@@ -1,6 +1,6 @@
 # Cross-Country Generalization on France (Île-de-France)
 
-This repository includes a cross-country validation experiment demonstrating that the pretrained **popVAT** model generalizes beyond Tunisia.
+This repository includes a cross-country validation experiment demonstrating that the  **popVAT** model generalizes beyond Tunisia.
 
 The experiment was conducted on **Île-de-France**, the most densely populated metropolitan region in France, to assess whether the proposed architecture remains effective under different geographic, demographic, and urban conditions.
 
