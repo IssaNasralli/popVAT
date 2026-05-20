@@ -10,9 +10,9 @@
 >        ↓
 > ArcGIS (project, resample, and add DEM/Slope bands to RGB tiles)
 >        ↓
-> Training
+>    Training
 >        ↓
-> Run Prediction
+>  Run Prediction
 >        ↓
 > Apply Threshold
 >        ↓
