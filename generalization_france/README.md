@@ -1,4 +1,3 @@
-````markdown
 # Cross-Country Generalization on France (Île-de-France)
 
 This repository includes a cross-country validation experiment demonstrating that the pretrained **popVAT** model generalizes beyond Tunisia.
