@@ -62,9 +62,6 @@ parser.add_argument("--threshold", type=float, default=0.8, help="threshold")
 
 args = parser.parse_args()
 
-
-#python3 r_squared.py --raster tunisia10_popVAE_full_GAG_1024_30_best_weights_popVAE_full_Tunisia_GAG_1024_30.h5_predicted.tif --csv ins_population.csv --region Tunisia --nb_masks 24
-
 # ========== CONFIGURATION ==========
 PATH = args.path
 THRESHOLD = args.threshold
