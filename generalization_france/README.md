@@ -299,7 +299,3 @@ Performance statistics printed by:
 r_squared.py
 
 ---
-
-# Contact
-
-For questions, bug reports, or collaboration inquiries, please open an issue in this repository.
