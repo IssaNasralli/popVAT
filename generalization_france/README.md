@@ -75,12 +75,7 @@ generalization_france/
 ├── insee_population.csv
 ├── popVAE_full_Gate_Atrous_Gate.py
 ├── requirements.txt
-├── test_popVAE_full_Gate.py
-│
-├── area.png
-├── flowchart.png
-├── overview.png
-└── popVAT.png
+└── test_popVAE_full_Gate.py
 ```
 
 ### Content Description
