@@ -76,6 +76,7 @@ generalization_france/
 ├── popVAE_full_Gate_Atrous_Gate.py
 ├── requirements.txt
 └── test_popVAE_full_Gate.py
+
 ```
 
 ### Content Description
@@ -297,3 +298,4 @@ Performance statistics printed by:
 
 ```bash
 r_squared.py
+```
