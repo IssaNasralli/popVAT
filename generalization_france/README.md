@@ -27,6 +27,21 @@ Generate Population Predictions
 Evaluate Results (R², MAE, RMSE, etc.)
 ```
 
+### Prepare GeoTIFF Inputs
+
+Users can either:
+
+1. Prepare their own input raster data and corresponding population target raster following the same format expected by the framework, or
+
+2. Directly use the ready-to-use files provided in this repository:
+
+```text
+france10.tif
+POP_France.tif
+```
+
+These files contain the GeoTIFF inputs and reference population raster used for the France experiment presented in the paper.
+
 ---
 
 # Requirements
@@ -36,6 +51,53 @@ Install the required Python packages before running the code:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+# Repository Contents
+
+```text
+generalization_france/
+│
+├── France_Regions/
+│   ├── France_Region_0.tif
+│   ├── France_Region_1.tif
+│   └── ...
+│
+├── POP_France.tif
+├── README.md
+├── best_weights_popVAE_full_France_GAG_1025_20_21.h5
+├── data_atrous.py
+├── evaluate.py
+├── france10.part1.rar
+├── france10.part2.rar
+├── france10_popVAE_full_GAG_1025_20__best_weights_...
+├── insee_population.csv
+├── popVAE_full_Gate_Atrous_Gate.py
+├── requirements.txt
+├── test_popVAE_full_Gate.py
+│
+├── area.png
+├── flowchart.png
+├── overview.png
+└── popVAT.png
+```
+
+### Content Description
+
+| File / Folder | Description |
+|--------------|-------------|
+| `France_Regions/` | Contains regional GeoTIFF files named `France_Region_X.tif` (X = 0, 1, ...). These files are used for the cross-country generalization experiments. |
+| `POP_France.tif` | Reference population raster used during training and evaluation. |
+| `france10.part1.rar` / `france10.part2.rar` | Compressed archive containing the France multisource GeoTIFF dataset (`france10.tif`). Extract both parts before use. |
+| `best_weights_popVAE_full_France_GAG_1025_20_21.h5` | Pretrained model weights provided for reproduction and inference. |
+| `test_popVAE_full_Gate.py` | Main script for training and inference. |
+| `evaluate.py` | Evaluation utilities. |
+| `data_atrous.py` | Data loading and preprocessing utilities. |
+| `popVAE_full_Gate_Atrous_Gate.py` | Neural network architecture implementation. |
+| `insee_population.csv` | Official census population data used for quantitative evaluation. |
+| `requirements.txt` | Python package dependencies. |
+| `area.png`, `flowchart.png`, `overview.png`, `popVAT.png` | Figures used in the documentation and project overview. |
 
 ---
 
