@@ -297,5 +297,3 @@ Performance statistics printed by:
 
 ```bash
 r_squared.py
-
----
