@@ -1,6 +1,6 @@
-# popVAT_Population – Population Mapping from GeoTIFF
+# popVAT_Population –France Example of Population Mapping from GeoTIFF
 
-> **ℹ️ Note:** This repository provides a reproducible implementation of the **popVAT_Population** framework for population mapping using multisource geospatial data and deep learning.
+> **ℹ️ Note:** This repository provides a reproducible implementation of the **popVAT_Population** framework, tested for Tunisia, for France population mapping using multisource geospatial data and deep learning.
 >
 > The workflow supports:
 >
