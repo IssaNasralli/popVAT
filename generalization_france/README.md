@@ -92,7 +92,6 @@ generalization_france/
 | `popVAE_full_Gate_Atrous_Gate.py` | Neural network architecture implementation. |
 | `insee_population.csv` | Official census population data used for quantitative evaluation. |
 | `requirements.txt` | Python package dependencies. |
-| `area.png`, `flowchart.png`, `overview.png`, `popVAT.png` | Figures used in the documentation and project overview. |
 
 ---
 
@@ -298,22 +297,6 @@ Performance statistics printed by:
 
 ```bash
 r_squared.py
-```
-
----
-
-# Citation
-
-If you use this repository in your research, please cite the corresponding paper:
-
-```bibtex
-@article{YOUR_CITATION,
-  title={Population Mapping with popVAT},
-  author={Authors},
-  journal={Journal},
-  year={2025}
-}
-```
 
 ---
 
