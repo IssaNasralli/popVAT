@@ -10,7 +10,6 @@ from sklearn.model_selection import train_test_split
 import popVAE_full_Gate_Atrous_Gate as popVAE
 
 import data_atrous as data
-import evaluate as ev
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from tensorflow.keras import backend as K
 import rasterio
@@ -33,8 +32,7 @@ def set_files(choice, country, model_option, batch_size, latent_dim, patch_size_
 
 
 def set_param(parser):
-    
-    nb_masks=24
+
     parser.add_argument("--model_option", type=str, required=True, help="Model option for ablation study") # G (VAE + Gate_Z), GA (VAE + Gate_Z + Atrous) and GAG (VAE + Gate_Z + Atrous + Gate_A)
     parser.add_argument("--batch_size", type=int, required=True, help="Batch size for training/evaluation")
     parser.add_argument("--latent_dim", type=int, required=True, help="Latent dimension size")
@@ -42,7 +40,7 @@ def set_param(parser):
     parser.add_argument("--training", type=int, choices=[0, 1], required=True, help="Training mode: 1 for training, 0 for inference")
     parser.add_argument("--choice", type=str, required=True, help="Input raster base name (e.g., tunisia10)")
     parser.add_argument("--country", type=str, required=True, help="Country name for district mask loading")
-    parser.add_argument("--nb_masks", type=int, required=False, help="Number of district masks to load")
+    parser.add_argument("--nb_masks", type=int, required=False, default=None, help="nb_masks")
     parser.add_argument("--weights", type=str, required=False, default=None, help="File Weights for transfer learning (optional)")
 
     args = parser.parse_args()
@@ -90,6 +88,14 @@ def main():
 
     input_data, profile = data.preprocess_raster_compososite(input_raster, output_raster,weight_b6,weight_b7,weight_b8, bands+2)
 
+
+    district_masks = data.load_district_masks(country, nb_masks)
+
+    for i, mask in enumerate(district_masks):
+        height, width = mask.shape
+        print(f"Width: {width}, Height: {height}")
+        break
+    
     # Create the model
     if(model_option=="G"):
         model = popVAE.create_vae_G(patch_size, latent_dim, bands, bands_context)
@@ -152,16 +158,6 @@ def main():
         model.save(weights)
         noweights=0
    
-    if(noweights==0):
-        profile.update(dtype=rasterio.float32, count=1, nodata=0.0)
-        # Create the model
-        if(model_option=="G"):
-            predicted_image = popVAE.predict_and_reconstruct_G(model, input_data, profile, output_prediction, patch_size, bands, bands, 5000, checkpoint_file=checkpoint_file)
-        else:
-            predicted_image = popVAE.predict_and_reconstruct_GAG_GA(model, input_data, profile, output_prediction, patch_size, patch_size_global, bands, bands, 5000, checkpoint_file=checkpoint_file)
-            
-    else:
-        print("No weights for prediction.")
 
 if __name__ == "__main__":
     main()
