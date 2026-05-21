@@ -109,6 +109,7 @@ def main():
     noweights=0
     try:
         model.load_weights(weights) 
+        print("Best weights found.")
     except:
         print("No best weights found. Starting training from scratch.")
         noweights=1
@@ -157,6 +158,8 @@ def main():
         print(f'Test Loss: {test_loss}')
         model.save(weights)
         noweights=0
+    else:
+        predicted_image = popVAE.predict_and_reconstruct_GAG_GA(model, input_data, profile, output_prediction, patch_size, patch_size_global, bands, bands, 5000, checkpoint_file=checkpoint_file)
    
 
 if __name__ == "__main__":
