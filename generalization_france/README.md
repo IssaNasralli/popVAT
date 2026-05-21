@@ -1,6 +1,6 @@
 # popVAT Population Estimation – France Example
 
-This repository provides scripts for training, inference, and evaluation of the **popVAE** population estimation framework.
+This repository provides scripts for training, inference, and evaluation of the **popVAT** population estimation framework.
 
 ---
 
