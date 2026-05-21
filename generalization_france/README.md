@@ -8,6 +8,10 @@ The experiment was conducted on **Île-de-France**, the most densely populated m
 > The goal of this experiment is ** to train a France-specific model**,  then to evaluate the popVAT architecture using exactly the same methodology and configuration developed for Tunisia.
 
 ---
+pretrained: python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 1 --choice france10 --country France --weights best_weights_popVAE_full_France_GAG_1025_20_21.h5 --nb_masks 8
+
+scratch:python test_popVAE_full_Gate.py --model_option GAG --batch_size 1025 --latent_dim 20 --patch_size_global 21 --training 1 --choice france10 --country France  --nb_masks 8
+
 
 ## Experimental Setup
 
