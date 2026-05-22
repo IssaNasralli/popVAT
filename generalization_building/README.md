@@ -233,22 +233,6 @@ The updated test image contains 5 bands (RGB + DEM + Slope) (Figure 3).
 ![Updated 5-band raster](p4.png)
 This confirms that the updated dataset properly includes the elevation and slope layers in addition to RGB.
 
-
-## Raster Information
-
-The original Massachusetts test image contains only:
-
-- 3 bands (RGB)
-
-The updated test image contains:
-
-- 5 bands:
-  - RGB
-  - DEM
-  - Slope
-
-This confirms that the updated dataset properly includes the elevation and slope layers in addition to RGB.
-
 ---
 
 # 🖼️ Full Inference Workflow
