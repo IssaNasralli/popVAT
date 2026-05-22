@@ -284,21 +284,20 @@ https://download.osgeo.org/qgis/windows/QGIS-OSGeo4W-3.44.2-1.msi?US
 Properties → Information
 ```
 
-(Figure 1).
 
 **Figure 1.** Raster properties window  
-<img src="p1.png" width="25%">
+<img src="p1.png" width="5%">
 
 
 The original Massachusetts test image contains only 3 bands (RGB) (Figure 2).
 
 **Figure 2.** Original Massachusetts test image (3 bands: RGB)  
-![Original 3-band raster](p3.png)
+<img src="p3.png" width="5%">
 
 The updated test image contains 5 bands (RGB + DEM + Slope) (Figure 3).
 
 **Figure 3.** Updated test image (5 bands: RGB + DEM + Slope)  
-![Updated 5-band raster](p4.png)
+<img src="p4.png" width="5%">
 
 This confirms that the updated dataset properly includes the elevation and slope layers in addition to RGB.
 
