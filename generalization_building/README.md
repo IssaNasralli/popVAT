@@ -287,7 +287,8 @@ Properties → Information
 (Figure 1).
 
 **Figure 1.** Raster properties window  
-![Raster Properties Window](p1.png)
+![Raster Properties Window]<img src="p1" width="25%">
+
 
 The original Massachusetts test image contains only 3 bands (RGB) (Figure 2).
 
