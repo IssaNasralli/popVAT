@@ -248,52 +248,12 @@ You can quickly visualize the detected buildings without GIS software by overlay
 
 ### Steps
 
-1. Open:
-
-```text
-output_colorized/22828930_15_updated.tiff
-```
-
-with **Paint** (`paint.exe`).
-
-2. Press:
-
-```text
-Ctrl + A
-```
-
-to select the entire image.
-
-3. Press:
-
-```text
-Ctrl + C
-```
-
-to copy the colorized building mask.
-
-4. Open:
-
-```text
-test/22828930_15.tiff
-```
-
-with **Paint**.
-
-5. In Paint, activate:
-
-```text
-Select → Transparent Selection
-```
-
-6. Press:
-
-```text
-Ctrl + V
-```
-
-to paste the copied mask onto the original image.
-
+1. Open:output_colorized/22828930_15_updated.tiff with **Paint** (`paint.exe`).
+2. Press:Ctrl + A to select the entire image.
+3. Press: Ctrl + C to copy the colorized building mask.
+4. Open: test/22828930_15.tiff with **Paint**.
+5. In Paint, activate: Select → Transparent Selection
+6. Press: Ctrl + V to paste the copied mask onto the original image.
 7. The turquoise regions will appear over the original RGB image, providing a simple visualization of the detected buildings.
 
 ### Result
