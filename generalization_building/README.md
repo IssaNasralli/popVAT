@@ -286,18 +286,18 @@ Properties → Information
 
 
 **Figure 1.** Raster properties window  
-<img src="p1.png" width="5%">
+<img src="p1.png" width="50%">
 
 
 The original Massachusetts test image contains only 3 bands (RGB) (Figure 2).
 
 **Figure 2.** Original Massachusetts test image (3 bands: RGB)  
-<img src="p3.png" width="5%">
+<img src="p3.png" width="50%">
 
 The updated test image contains 5 bands (RGB + DEM + Slope) (Figure 3).
 
 **Figure 3.** Updated test image (5 bands: RGB + DEM + Slope)  
-<img src="p4.png" width="5%">
+<img src="p4.png" width="50%">
 
 This confirms that the updated dataset properly includes the elevation and slope layers in addition to RGB.
 
