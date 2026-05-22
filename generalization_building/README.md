@@ -287,28 +287,6 @@ The updated test image contains 5 bands (RGB + DEM + Slope) (Figure 3).
 This confirms that the updated dataset properly includes the elevation and slope layers in addition to RGB.
 
 
----
-
-## Steps
-
-1. Open **QGIS**.
-2. Drag files from:
-   - `output/`
-   - `output_threshold_X.XX/`
-   - `output_colorized/`
-
-   into the **Layers** panel.
-
-3. Add corresponding images from:
-   - `test/`
-   - `test_updated/`
-
-   for overlay comparison.
-
-4. Right-click a raster layer → **Properties** → **Information**.
-
----
-
 ## Raster Information
 
 The original Massachusetts test image contains only:
