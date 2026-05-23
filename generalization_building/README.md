@@ -19,6 +19,8 @@
 > Apply Threshold
 >        ↓
 > Apply Colorization
+>        ↓
+> Overlay Masks on Original Images
 > ```
 >
 > **However, if you only want to test the model or perform building segmentation, you can skip all preprocessing and training steps and directly use the provided pretrained model for inference.**
@@ -42,7 +44,7 @@ The repository now includes the following updated GeoTIFF tiles:
 24179065_15.tiff
 ```
 
-Each original tile inside `test/` has a corresponding updated 5-band version inside `test_updated/`:
+Each original tile inside `test_original/` has a corresponding updated 5-band version inside `test_updated/`:
 
 ```text
 22828930_15.tiff              → 22828930_15_updated.tiff
@@ -95,6 +97,7 @@ popVAT_Building-Test/
 │── predict.py                      # Run inference on all GeoTIFFs in test_updated/
 │── threshold.py                    # Apply threshold to probability maps to create binary masks
 │── color.py                        # Convert binary masks into turquoise RGB visualizations
+│── overlay.py                      # Overlay turquoise masks onto original RGB images
 │── wheight.h5                      # Best weight
 │
 ├── test_updated/                   # UPDATED test GeoTIFFs (5 bands: R,G,B,DEM,Slope)
@@ -109,7 +112,7 @@ popVAT_Building-Test/
 │   ├── 23879080_15_updated.tiff
 │   └── 24179065_15_updated.tiff
 │
-├── test/                           # ORIGINAL test GeoTIFFs (reference RGB)
+├── test_original/                  # ORIGINAL RGB test GeoTIFFs
 │   ├── 22828930_15.tiff
 │   ├── 22828990_15.tiff
 │   ├── 22829050_15.tiff
@@ -125,7 +128,9 @@ popVAT_Building-Test/
 │
 ├── output_threshold_0.9/           # Binary masks after thresholding
 │
-└── output_colorized/               # Turquoise visualization outputs
+├── output_colorized/               # Turquoise mask visualizations
+│
+└── output_annotation_popVAT/       # Final overlays on original RGB images
 ```
 
 **Input format**: GeoTIFFs with **5 bands** ordered as:
@@ -219,6 +224,56 @@ output_colorized/
 
 ---
 
+## 4) Overlay Masks on Original RGB Images
+
+Overlays the turquoise building masks from `output_colorized/` onto the corresponding original RGB images inside `test_original/`.
+
+The script automatically matches:
+
+```text
+22828930_15_updated.tiff
+```
+
+with:
+
+```text
+22828930_15.tiff
+```
+
+Run:
+
+```bash
+python overlay.py
+```
+
+Or specify custom folders:
+
+```bash
+python overlay.py \
+    --mask_folder output_colorized \
+    --image_folder test_original \
+    --output_folder output_annotation_popVAT
+```
+
+This creates:
+
+```text
+output_annotation_popVAT/
+  ├── 22828930_15.tiff
+  ├── 22828990_15.tiff
+  ├── 22829050_15.tiff
+  ├── ...
+```
+
+### Overlay Result
+
+- turquoise → detected buildings
+- original RGB imagery → background reference
+
+This provides a clean visualization of the segmentation results directly on the original image.
+
+---
+
 # 🎨 Colorization Details
 
 The script converts pixels with RGB value:
@@ -242,32 +297,26 @@ into turquoise:
 
 ---
 
-# 🖌️ Simple Overlay Visualization with Paint
+# 🖌️ Automatic Overlay Visualization
 
-You can quickly visualize the detected buildings without GIS software by overlaying the colorized mask onto the original image using Microsoft Paint.
+The repository includes `overlay.py`, which automatically overlays the turquoise building masks onto the original RGB images.
 
-### Steps
+### Input
 
-1. Open:output_colorized/22828930_15_updated.tiff with **Paint** (`paint.exe`).
-2. Press:Ctrl + A to select the entire image.
-3. Press: Ctrl + C to copy the colorized building mask.
-4. Open: test/22828930_15.tiff with **Paint**.
-5. In Paint, activate: Select → Transparent Selection
-6. Press: Ctrl + V to paste the copied mask onto the original image.
-7. The turquoise regions will appear over the original RGB image, providing a simple visualization of the detected buildings.
+- `output_colorized/` → turquoise masks
+- `test_original/` → original RGB images
 
-### Result
+### Output
 
-- Turquoise overlay → detected buildings
-- Original RGB image → background reference
+- `output_annotation_popVAT/` → final annotated overlays
 
-This provides a lightweight alternative to GIS visualization tools for quick qualitative inspection.
+The overlay process preserves the original image while replacing detected building regions with turquoise pixels.
 
 ---
 
 # 🛰️ Visualizing in QGIS
 
-You can use free **QGIS** to inspect updated RGB+DEM+Slope rasters.
+You can use free **QGIS** to inspect updated RGB+DEM+Slope rasters and overlay results.
 
 Download QGIS (Windows):
 
@@ -276,18 +325,22 @@ https://download.osgeo.org/qgis/windows/QGIS-OSGeo4W-3.44.2-1.msi?US
 ```
 
 1. Open **QGIS**.
-2. Drag the files from `output/` (probabilities) or `output_threshold_X.XX/` (binary) into the **Layers** panel in QGIS, or simply open them with Paint/Image Viewer for a quick check.
-3. Add corresponding originals from `test/` or updated inputs from `test_updated/` for overlay comparison.
+2. Drag the files from:
+   - `output/` → probability maps
+   - `output_threshold_X.XX/` → binary masks
+   - `output_colorized/` → turquoise masks
+   - `output_annotation_popVAT/` → overlay visualizations
+3. Add corresponding originals from `test_original/` or updated inputs from `test_updated/`.
 4. Right-click the raster layer and open:
 
 ```text
 Properties → Information
 ```
 
+---
 
 **Figure 1.** Raster properties window  
 <img src="p1.png" width="50%">
-
 
 The original Massachusetts test image contains only 3 bands (RGB) (Figure 2).
 
@@ -311,6 +364,8 @@ Run Prediction
 Apply Threshold
       ↓
 Apply Colorization
+      ↓
+Overlay Masks on Original RGB Images
 ```
 
 Example:
@@ -319,6 +374,7 @@ Example:
 python predict.py
 python threshold.py --threshold 0.9
 python color.py --path output_threshold_0.9
+python overlay.py
 ```
 
 ---
@@ -346,6 +402,8 @@ python color.py --path output_threshold_0.9
   ```
 
 - **Colorized outputs** are standard RGB GeoTIFFs.
+
+- **Overlay outputs** preserve the original RGB image while highlighting predicted buildings in turquoise.
 
 - Large rasters may require significant RAM/VRAM.
 
