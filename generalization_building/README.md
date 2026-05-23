@@ -274,30 +274,8 @@ This provides a clean visualization of the segmentation results directly on the 
 
 ---
 
-# 🎨 Colorization Details
 
-The script converts pixels with RGB value:
-
-```text
-(255, 255, 255)
-```
-
-into turquoise:
-
-```text
-(64, 224, 208)
-```
-
-### Final Color Scheme
-
-| Class | RGB Value | Color |
-|---|---|---|
-| Building | (64, 224, 208) | Turquoise |
-| Background | (255, 255, 255) | White |
-
----
-
-# 🖌️ Automatic Overlay Visualization
+# Automatic Overlay Visualization
 
 The repository includes `overlay.py`, which automatically overlays the turquoise building masks onto the original RGB images.
 
@@ -351,17 +329,7 @@ This confirms that the updated dataset properly includes the elevation and slope
 
 ---
 
-# 🖼️ Full Inference Workflow
-
-```text
-Run Prediction
-      ↓
-Apply Threshold
-      ↓
-Apply Colorization
-      ↓
-Overlay Masks on Original RGB Images
-```
+# 🖼️ Full Inference Workflow without training and data pre-processing (ArcGIS and GEE)
 
 Example:
 
@@ -373,6 +341,16 @@ python overlay.py
 ```
 
 ---
+# ⏱️ Inference Time
+
+Inference speed depends on the available hardware (CPU, GPU, RAM, storage speed, and TensorFlow configuration).
+
+For the provided sample GeoTIFF tiles, the average inference time is approximately:
+
+```text
+10–15 minutes per image
+```
+
 
 # ℹ️ Notes & Tips
 
