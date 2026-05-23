@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ```text
 popVAT_Building-Test/
 │── README.md
-│── TriFusion_Gate_Atrous_Gate.py
+│── popVAE_Gate_Atrous_Gate_Building.py
 │── predict.py
 │── threshold.py
 │── color.py
@@ -128,25 +128,15 @@ vis_original/
 vis_ground_truth/
 vis_pred/
 ```
-
-Each image is resized for visualization (25% scale equivalent).
-
 ---
 
 # ⏱️ Inference Time
 
-Average inference time per image:
+Average inference time per image (Prediction):
 
 ```text
 10–15 minutes per image
 ```
-
-Includes:
-
-```text
-Prediction → Thresholding → Colorization → Overlay → Conversion
-```
-
 ---
 
 # 📊 Qualitative Comparison: Ground Truth vs Input vs popVAT
@@ -156,15 +146,6 @@ We provide a **side-by-side evaluation**:
 - Ground Truth (`test_ground_truth/`)
 - Original Image (`test_original/`)
 - popVAT Prediction (`output_annotation_popVAT/`)
-
----
-
-## 📁 Matching Rule
-
-```text
-22828930_15_updated.tiff
-→ 22828930_15.tiff (original + GT + prediction)
-```
 
 ---
 
@@ -197,7 +178,7 @@ overlay.py
     ↓
 conversion_png.py
     ↓
-README visualization
+visualization
 ```
 
 ---
