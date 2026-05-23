@@ -22,8 +22,6 @@
 >        ↓
 > Overlay Masks on Original Images
 >        ↓
-> Convert TIFF → PNG (Visualization)
->        ↓
 > Qualitative Comparison
 > ```
 >
@@ -58,7 +56,6 @@ popVAT_Building-Test/
 │── threshold.py
 │── color.py
 │── overlay.py
-│── conversion_png.py   # NEW: TIFF → PNG conversion for visualization
 │── wheight.h5
 │
 ├── test_updated/
@@ -69,10 +66,7 @@ popVAT_Building-Test/
 ├── output_threshold_0.9/
 ├── output_colorized/
 ├── output_annotation_popVAT/
-│
-├── vis_original/        # PNG visualization
-├── vis_ground_truth/    # PNG visualization
-├── vis_pred/            # PNG visualization
+
 ```
 
 ---
@@ -111,24 +105,6 @@ python overlay.py
 
 ---
 
-## 5) Convert TIFF → PNG (Visualization Step)
-
-⚠️ Required for README visualization (GitHub cannot render TIFF)
-
-Run:
-
-```bash
-python conversion_png.py
-```
-
-This creates:
-
-```text
-vis_original/
-vis_ground_truth/
-vis_pred/
-```
----
 
 # ⏱️ Inference Time
 
@@ -151,19 +127,7 @@ We provide a **side-by-side evaluation**:
 
 # 📊 Qualitative Comparison: Ground Truth vs Input vs popVAT
 
-| Ground Truth | Original Image | popVAT Prediction |
-|--------------|----------------|-------------------|
-| <img src="vis_ground_truth/22828930_15.png" width="100%"> | <img src="vis_original/22828930_15.png" width="100%"> | <img src="vis_pred/22828930_15.png" width="100%"> |
-| <img src="vis_ground_truth/22828990_15.png" width="100%"> | <img src="vis_original/22828990_15.png" width="100%"> | <img src="vis_pred/22828990_15.png" width="100%"> |
-| <img src="vis_ground_truth/228290100_15.png" width="100%"> | <img src="vis_original/228290100_15.png" width="100%"> | <img src="vis_pred/228290100_15.png" width="100%"> |
-| <img src="vis_ground_truth/23429020_15.png" width="100%"> | <img src="vis_original/23429020_15.png" width="100%"> | <img src="vis_pred/23429020_15.png" width="100%"> |
-| <img src="vis_ground_truth/23429080_15.png" width="100%"> | <img src="vis_original/23429080_15.png" width="100%"> | <img src="vis_pred/23429080_15.png" width="100%"> |
-| <img src="vis_ground_truth/23578960_15.png" width="100%"> | <img src="vis_original/23578960_15.png" width="100%"> | <img src="vis_pred/23578960_15.png" width="100%"> |
-| <img src="vis_ground_truth/23579005_15.png" width="100%"> | <img src="vis_original/23579005_15.png" width="100%"> | <img src="vis_pred/23579005_15.png" width="100%"> |
-| <img src="vis_ground_truth/23729035_15.png" width="100%"> | <img src="vis_original/23729035_15.png" width="100%"> | <img src="vis_pred/23729035_15.png" width="100%"> |
-| <img src="vis_ground_truth/23879080_15.png" width="100%"> | <img src="vis_original/23879080_15.png" width="100%"> | <img src="vis_pred/23879080_15.png" width="100%"> |
-| <img src="vis_ground_truth/24179065_15.png" width="100%"> | <img src="vis_original/24179065_15.png" width="100%"> | <img src="vis_pred/24179065_15.png" width="100%"> |
-
+<img src="detection_four.png" width="100%"> 
 
 # ⚡ Full Pipeline
 
@@ -175,8 +139,6 @@ threshold.py
 color.py
     ↓
 overlay.py
-    ↓
-conversion_png.py
     ↓
 visualization
 ```
