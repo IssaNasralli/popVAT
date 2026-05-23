@@ -168,40 +168,21 @@ We provide a **side-by-side evaluation**:
 
 ---
 
-# 📊 Visual Results (25% Scale)
+# 📊 Qualitative Comparison: Ground Truth vs Input vs popVAT
 
-| Ground Truth | Original | popVAT Prediction |
-|--------------|----------|-------------------|
-| <img src="vis_ground_truth/22828930_15.png" width="25%"> | <img src="vis_original/22828930_15.png" width="25%"> | <img src="vis_pred/22828930_15.png" width="25%"> |
-| <img src="vis_ground_truth/22828990_15.png" width="25%"> | <img src="vis_original/22828990_15.png" width="25%"> | <img src="vis_pred/22828990_15.png" width="25%"> |
-| <img src="vis_ground_truth/22829050_15.png" width="25%"> | <img src="vis_original/22829050_15.png" width="25%"> | <img src="vis_pred/22829050_15.png" width="25%"> |
-| <img src="vis_ground_truth/23429020_15.png" width="25%"> | <img src="vis_original/23429020_15.png" width="25%"> | <img src="vis_pred/23429020_15.png" width="25%"> |
-| <img src="vis_ground_truth/23429080_15.png" width="25%"> | <img src="vis_original/23429080_15.png" width="25%"> | <img src="vis_pred/23429080_15.png" width="25%"> |
+| Ground Truth | Original Image | popVAT Prediction |
+|--------------|----------------|-------------------|
+| <img src="vis_ground_truth/22828930_15.png" width="100%"> | <img src="vis_original/22828930_15.png" width="100%"> | <img src="vis_pred/22828930_15.png" width="100%"> |
+| <img src="vis_ground_truth/22828990_15.png" width="100%"> | <img src="vis_original/22828990_15.png" width="100%"> | <img src="vis_pred/22828990_15.png" width="100%"> |
+| <img src="vis_ground_truth/228290100_15.png" width="100%"> | <img src="vis_original/228290100_15.png" width="100%"> | <img src="vis_pred/228290100_15.png" width="100%"> |
+| <img src="vis_ground_truth/23429020_15.png" width="100%"> | <img src="vis_original/23429020_15.png" width="100%"> | <img src="vis_pred/23429020_15.png" width="100%"> |
+| <img src="vis_ground_truth/23429080_15.png" width="100%"> | <img src="vis_original/23429080_15.png" width="100%"> | <img src="vis_pred/23429080_15.png" width="100%"> |
+| <img src="vis_ground_truth/23578960_15.png" width="100%"> | <img src="vis_original/23578960_15.png" width="100%"> | <img src="vis_pred/23578960_15.png" width="100%"> |
+| <img src="vis_ground_truth/23579005_15.png" width="100%"> | <img src="vis_original/23579005_15.png" width="100%"> | <img src="vis_pred/23579005_15.png" width="100%"> |
+| <img src="vis_ground_truth/23729035_15.png" width="100%"> | <img src="vis_original/23729035_15.png" width="100%"> | <img src="vis_pred/23729035_15.png" width="100%"> |
+| <img src="vis_ground_truth/23879080_15.png" width="100%"> | <img src="vis_original/23879080_15.png" width="100%"> | <img src="vis_pred/23879080_15.png" width="100%"> |
+| <img src="vis_ground_truth/24179065_15.png" width="100%"> | <img src="vis_original/24179065_15.png" width="100%"> | <img src="vis_pred/24179065_15.png" width="100%"> |
 
----
-
-# 🎨 Color Scheme
-
-| Class | RGB |
-|------|-----|
-| Building | (64, 224, 208) |
-| Background | (255, 255, 255) |
-
----
-
-# 🛰️ Notes
-
-- Inputs must follow:
-```text
-[R, G, B, DEM, Slope]
-```
-
-- Outputs:
-  - probability: `[0,1]`
-  - binary: `{0,1}`
-  - visualization: RGB GeoTIFF
-
----
 
 # ⚡ Full Pipeline
 
@@ -221,8 +202,3 @@ README visualization
 
 ---
 
-# ⚠️ Important
-
-- TIFF files are NOT directly viewable in README → PNG conversion required
-- Large rasters may require high RAM/GPU
-- Recommended GPU acceleration for faster inference
