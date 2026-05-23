@@ -325,13 +325,8 @@ https://download.osgeo.org/qgis/windows/QGIS-OSGeo4W-3.44.2-1.msi?US
 ```
 
 1. Open **QGIS**.
-2. Drag the files from:
-   - `output/` → probability maps
-   - `output_threshold_X.XX/` → binary masks
-   - `output_colorized/` → turquoise masks
-   - `output_annotation_popVAT/` → overlay visualizations
-3. Add corresponding originals from `test_original/` or updated inputs from `test_updated/`.
-4. Right-click the raster layer and open:
+2. Add corresponding originals from `test_original/` or updated inputs from `test_updated/`.
+3. Right-click the raster layer and open:
 
 ```text
 Properties → Information
