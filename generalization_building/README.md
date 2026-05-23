@@ -407,26 +407,8 @@ Prediction   : 22828930_15.tiff
 
 ---
 
-# 🧪 Visualization Grid
-
-Each row represents one sample image:
-
 | Ground Truth | Original Image | popVAT Prediction |
 |--------------|----------------|-------------------|
-| <img src="test_ground_truth/22828930_15.tiff" width="25%"> | <img src="test_original/22828930_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22828930_15.tiff" width="25%"> |
-| <img src="test_ground_truth/22828990_15.tiff" width="25%"> | <img src="test_original/22828990_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22828990_15.tiff" width="25%"> |
-| <img src="test_ground_truth/22829050_15.tiff" width="25%"> | <img src="test_original/22829050_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22829050_15.tiff" width="25%"> |
-| <img src="test_ground_truth/23429020_15.tiff" width="25%"> | <img src="test_original/23429020_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23429020_15.tiff" width="25%"> |
-| <img src="test_ground_truth/23429080_15.tiff" width="25%"> | <img src="test_original/23429080_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23429080_15.tiff" width="25%"> |
-| <img src="test_ground_truth/23578960_15.tiff" width="25%"> | <img src="test_original/23578960_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23578960_15.tiff" width="25%"> |
-
----
-
-# 🧾 Notes
-
-- All images are displayed at **25% width** for compact visualization.
-- Rows are aligned by **file name matching** (stem-based).
-- popVAT outputs correspond to the final overlay visualization in turquoise.
-- Ground truth images represent manually annotated building masks.
-
----
+| <img src="vis_ground_truth/22828930_15.png" width="25%"> | <img src="vis_original/22828930_15.png" width="25%"> | <img src="vis_pred/22828930_15.png" width="25%"> |
+| <img src="vis_ground_truth/22828990_15.png" width="25%"> | <img src="vis_original/22828990_15.png" width="25%"> | <img src="vis_pred/22828990_15.png" width="25%"> |
+| <img src="vis_ground_truth/22829050_15.png" width="25%"> | <img src="vis_original/22829050_15.png" width="25%"> | <img src="vis_pred/22829050_15.png" width="25%"> |
