@@ -127,7 +127,7 @@ We provide a **side-by-side evaluation**:
 
 # 📊 Qualitative Comparison: Ground Truth vs Input vs popVAT
 
-<img src="detection_four.png" width="100%"> 
+<img src="detection_four.png" width="75%"> 
 
 # ⚡ Full Pipeline
 
