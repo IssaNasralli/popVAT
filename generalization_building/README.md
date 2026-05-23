@@ -383,3 +383,50 @@ For the provided sample GeoTIFF tiles, the average inference time is approximate
 - For large-scale inference, tiling strategies are recommended.
 
 ---
+---
+
+# 📊 Qualitative Comparison: Ground Truth vs Input vs popVAT Prediction
+
+To visually evaluate the performance of the **popVAT_Building** model, we provide a side-by-side comparison between:
+
+- **Ground Truth annotations** (`test_ground_truth/`)
+- **Original RGB test images** (`test_original/`)
+- **popVAT predicted overlays** (`output_annotation_popVAT/`)
+
+### 📁 Matching Rule
+
+Ground truth files follow the same naming convention as the test images, but **without the word `_updated`**.
+
+Example:
+
+```text
+Ground Truth: 22828930_15.tiff
+Original     : 22828930_15.tiff
+Prediction   : 22828930_15.tiff
+```
+
+---
+
+# 🧪 Visualization Grid
+
+Each row represents one sample image:
+
+| Ground Truth | Original Image | popVAT Prediction |
+|--------------|----------------|-------------------|
+| <img src="test_ground_truth/22828930_15.tiff" width="25%"> | <img src="test_original/22828930_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22828930_15.tiff" width="25%"> |
+| <img src="test_ground_truth/22828990_15.tiff" width="25%"> | <img src="test_original/22828990_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22828990_15.tiff" width="25%"> |
+| <img src="test_ground_truth/22829050_15.tiff" width="25%"> | <img src="test_original/22829050_15.tiff" width="25%"> | <img src="output_annotation_popVAT/22829050_15.tiff" width="25%"> |
+| <img src="test_ground_truth/23429020_15.tiff" width="25%"> | <img src="test_original/23429020_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23429020_15.tiff" width="25%"> |
+| <img src="test_ground_truth/23429080_15.tiff" width="25%"> | <img src="test_original/23429080_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23429080_15.tiff" width="25%"> |
+| <img src="test_ground_truth/23578960_15.tiff" width="25%"> | <img src="test_original/23578960_15.tiff" width="25%"> | <img src="output_annotation_popVAT/23578960_15.tiff" width="25%"> |
+
+---
+
+# 🧾 Notes
+
+- All images are displayed at **25% width** for compact visualization.
+- Rows are aligned by **file name matching** (stem-based).
+- popVAT outputs correspond to the final overlay visualization in turquoise.
+- Ground truth images represent manually annotated building masks.
+
+---
