@@ -411,13 +411,13 @@ Prediction   : 22828930_15.tiff
 
 | Ground Truth | Original Image | popVAT Prediction |
 |--------------|----------------|-------------------|
-| <img src="vis_ground_truth/22828930_15.png" width="50%"> | <img src="vis_original/22828930_15.png" width="50%"> | <img src="vis_pred/22828930_15.png" width="50%"> |
-| <img src="vis_ground_truth/22828990_15.png" width="50%"> | <img src="vis_original/22828990_15.png" width="50%"> | <img src="vis_pred/22828990_15.png" width="50%"> |
-| <img src="vis_ground_truth/22829050_15.png" width="50%"> | <img src="vis_original/22829050_15.png" width="50%"> | <img src="vis_pred/22829050_15.png" width="50%"> |
-| <img src="vis_ground_truth/23429020_15.png" width="50%"> | <img src="vis_original/23429020_15.png" width="50%"> | <img src="vis_pred/23429020_15.png" width="50%"> |
-| <img src="vis_ground_truth/23429080_15.png" width="50%"> | <img src="vis_original/23429080_15.png" width="50%"> | <img src="vis_pred/23429080_15.png" width="50%"> |
-| <img src="vis_ground_truth/23578960_15.png" width="50%"> | <img src="vis_original/23578960_15.png" width="50%"> | <img src="vis_pred/23578960_15.png" width="50%"> |
-| <img src="vis_ground_truth/23579005_15.png" width="50%"> | <img src="vis_original/23579005_15.png" width="50%"> | <img src="vis_pred/23579005_15.png" width="50%"> |
-| <img src="vis_ground_truth/23729035_15.png" width="50%"> | <img src="vis_original/23729035_15.png" width="50%"> | <img src="vis_pred/23729035_15.png" width="50%"> |
-| <img src="vis_ground_truth/23879080_15.png" width="50%"> | <img src="vis_original/23879080_15.png" width="50%"> | <img src="vis_pred/23879080_15.png" width="50%"> |
-| <img src="vis_ground_truth/24179065_15.png" width="50%"> | <img src="vis_original/24179065_15.png" width="50%"> | <img src="vis_pred/24179065_15.png" width="50%"> |
+| <img src="vis_ground_truth/22828930_15.png" width="100%"> | <img src="vis_original/22828930_15.png" width="100%"> | <img src="vis_pred/22828930_15.png" width="100%"> |
+| <img src="vis_ground_truth/22828990_15.png" width="100%"> | <img src="vis_original/22828990_15.png" width="100%"> | <img src="vis_pred/22828990_15.png" width="100%"> |
+| <img src="vis_ground_truth/228290100_15.png" width="100%"> | <img src="vis_original/228290100_15.png" width="100%"> | <img src="vis_pred/228290100_15.png" width="100%"> |
+| <img src="vis_ground_truth/23429020_15.png" width="100%"> | <img src="vis_original/23429020_15.png" width="100%"> | <img src="vis_pred/23429020_15.png" width="100%"> |
+| <img src="vis_ground_truth/23429080_15.png" width="100%"> | <img src="vis_original/23429080_15.png" width="100%"> | <img src="vis_pred/23429080_15.png" width="100%"> |
+| <img src="vis_ground_truth/23578960_15.png" width="100%"> | <img src="vis_original/23578960_15.png" width="100%"> | <img src="vis_pred/23578960_15.png" width="100%"> |
+| <img src="vis_ground_truth/23579005_15.png" width="100%"> | <img src="vis_original/23579005_15.png" width="100%"> | <img src="vis_pred/23579005_15.png" width="100%"> |
+| <img src="vis_ground_truth/23729035_15.png" width="100%"> | <img src="vis_original/23729035_15.png" width="100%"> | <img src="vis_pred/23729035_15.png" width="100%"> |
+| <img src="vis_ground_truth/23879080_15.png" width="100%"> | <img src="vis_original/23879080_15.png" width="100%"> | <img src="vis_pred/23879080_15.png" width="100%"> |
+| <img src="vis_ground_truth/24179065_15.png" width="100%"> | <img src="vis_original/24179065_15.png" width="100%"> | <img src="vis_pred/24179065_15.png" width="100%"> |
