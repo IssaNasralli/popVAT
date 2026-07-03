@@ -539,4 +539,29 @@ All intermediate and final datasets are provided whenever possible to ensure rep
 If you use this repository, please cite the corresponding publications of **popVAT** and **popVAE**.
 
 ---
+popVAE:
+```bash
+@inproceedings{nasralli2025fine,
+  title={Fine-Scale Population Estimation Using a Variational Autoencoder-Based Approach Integrating Geospatial Data},
+  author={Nasralli, Issa and Masmoudi, Imen and Drira, Hassen and Taieb, Mohamed Ali Hadj},
+  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)},
+  pages={1--8},
+  year={2025},
+  organization={IEEE}
+}
+```
 
+popVAT:
+```bash
+@article{nasralli2026adaptive,
+  title={Adaptive spatial feature fusion for fine-grained population estimation from multi-source geospatial data},
+  author={Nasralli, Issa and Masmoudi, Imen and Drira, Hassen and Hadj Taieb, Mohamed Ali},
+  journal={GeoInformatica},
+  volume={30},
+  number={2},
+  pages={21},
+  year={2026},
+  publisher={Springer}
+}
+}
+```
